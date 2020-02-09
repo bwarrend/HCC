@@ -438,10 +438,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 184252406}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a6f5a16300749b14fa24bd030c680a03, type: 3}
+  m_Script: {fileID: 11500000, guid: 0c6b7ea34f012ce47b0d1e44d87035da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textFromfile: {fileID: 4900000, guid: 269bc78b35e07ba44a43dd2069cbc62e, type: 3}
+  url: https://raw.githubusercontent.com/bwarrend/HCC/master/Assets/Changeable%20Text/Internet/Tab%202/Tab2.txt
   text: {fileID: 588066580}
 --- !u!1 &281145130
 GameObject:
@@ -1912,10 +1912,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 795107462}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a6f5a16300749b14fa24bd030c680a03, type: 3}
+  m_Script: {fileID: 11500000, guid: 0c6b7ea34f012ce47b0d1e44d87035da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textFromfile: {fileID: 4900000, guid: ffcb31b7192acbf479c56d6a2322311f, type: 3}
+  url: https://raw.githubusercontent.com/bwarrend/HCC/master/Assets/Changeable%20Text/Internet/Tab%201/Lesson1.txt
   text: {fileID: 1051481905}
 --- !u!224 &864681234 stripped
 RectTransform:
@@ -2064,10 +2064,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 901367689}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a6f5a16300749b14fa24bd030c680a03, type: 3}
+  m_Script: {fileID: 11500000, guid: 0c6b7ea34f012ce47b0d1e44d87035da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textFromfile: {fileID: 4900000, guid: c20ab6e38b97b3c4b999169ea04ef1f7, type: 3}
+  url: https://raw.githubusercontent.com/bwarrend/HCC/master/Assets/Changeable%20Text/Internet/Tab%202/Lesson2.txt
   text: {fileID: 646673004}
 --- !u!1 &1051481903
 GameObject:
@@ -2439,7 +2439,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 362.89, y: 199.62}
+  m_AnchoredPosition: {x: 379.39987, y: 207.2}
   m_SizeDelta: {x: 17.9, y: 7.06}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1203628856
@@ -2858,10 +2858,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1379798031}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a6f5a16300749b14fa24bd030c680a03, type: 3}
+  m_Script: {fileID: 11500000, guid: 0c6b7ea34f012ce47b0d1e44d87035da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textFromfile: {fileID: 4900000, guid: bd8bc71c4e50eed4d837506b338f12b3, type: 3}
+  url: https://raw.githubusercontent.com/bwarrend/HCC/master/Assets/Changeable%20Text/Internet/Tab%201/Tab1.txt
   text: {fileID: 1357949330}
 --- !u!1 &1461010682
 GameObject:
@@ -2961,10 +2961,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1504674713}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a6f5a16300749b14fa24bd030c680a03, type: 3}
+  m_Script: {fileID: 11500000, guid: 0c6b7ea34f012ce47b0d1e44d87035da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textFromfile: {fileID: 4900000, guid: 8ef7dadd5769e2a449a314c9f76097e8, type: 3}
+  url: https://raw.githubusercontent.com/bwarrend/HCC/master/Assets/Changeable%20Text/Internet/Tab%204/Tab4.txt
   text: {fileID: 1695327321}
 --- !u!1 &1695327319
 GameObject:
@@ -3098,10 +3098,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1750026787}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a6f5a16300749b14fa24bd030c680a03, type: 3}
+  m_Script: {fileID: 11500000, guid: 0c6b7ea34f012ce47b0d1e44d87035da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textFromfile: {fileID: 4900000, guid: ee2ce22ef2c89df4f8e785990d6535f6, type: 3}
+  url: https://raw.githubusercontent.com/bwarrend/HCC/master/Assets/Changeable%20Text/Internet/Tab%205/Lesson5.txt
   text: {fileID: 1461010684}
 --- !u!1 &1806800855
 GameObject:
@@ -3232,10 +3232,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1819806800}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a6f5a16300749b14fa24bd030c680a03, type: 3}
+  m_Script: {fileID: 11500000, guid: 0c6b7ea34f012ce47b0d1e44d87035da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textFromfile: {fileID: 4900000, guid: aa6f8e3d94438224e98de70ca3c2f639, type: 3}
+  url: https://raw.githubusercontent.com/bwarrend/HCC/master/Assets/Changeable%20Text/Internet/Tab%204/Lesson4.txt
   text: {fileID: 1329831983}
 --- !u!224 &1843257939 stripped
 RectTransform:
@@ -3352,10 +3352,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1864267477}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a6f5a16300749b14fa24bd030c680a03, type: 3}
+  m_Script: {fileID: 11500000, guid: 0c6b7ea34f012ce47b0d1e44d87035da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textFromfile: {fileID: 4900000, guid: ad0f7e4a14dc4224fbd9b23946750fd1, type: 3}
+  url: https://raw.githubusercontent.com/bwarrend/HCC/master/Assets/Changeable%20Text/Internet/Tab%203/Tab3.txt
   text: {fileID: 281145132}
 --- !u!1 &1895633765
 GameObject:
@@ -3597,10 +3597,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 2048250613}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a6f5a16300749b14fa24bd030c680a03, type: 3}
+  m_Script: {fileID: 11500000, guid: 0c6b7ea34f012ce47b0d1e44d87035da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textFromfile: {fileID: 4900000, guid: e681fe613c2b8b3408a7417e71e4fe1a, type: 3}
+  url: https://raw.githubusercontent.com/bwarrend/HCC/master/Assets/Changeable%20Text/Internet/Tab%205/Tab5.txt
   text: {fileID: 1120742980}
 --- !u!224 &2059789688 stripped
 RectTransform:
@@ -3657,10 +3657,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 2106869055}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a6f5a16300749b14fa24bd030c680a03, type: 3}
+  m_Script: {fileID: 11500000, guid: 0c6b7ea34f012ce47b0d1e44d87035da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textFromfile: {fileID: 4900000, guid: 10154405730933a469da8f00cb656375, type: 3}
+  url: https://raw.githubusercontent.com/bwarrend/HCC/master/Assets/Changeable%20Text/Internet/Tab%203/Lesson3.txt
   text: {fileID: 1895633767}
 --- !u!1 &2112995463
 GameObject:
@@ -3713,7 +3713,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   img: {fileID: 2112995466}
-  url: https://raw.githubusercontent.com/bwarrend/HCC/master/Assets/Art/Background_Beach.png
+  url: https://raw.githubusercontent.com/bwarrend/HCC/master/Assets/Art/Internet_Browser.jpg
 --- !u!114 &2112995466
 MonoBehaviour:
   m_ObjectHideFlags: 0
