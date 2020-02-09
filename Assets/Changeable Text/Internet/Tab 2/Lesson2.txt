@@ -1,0 +1,4 @@
+Phishing
+
+Fish = Good
+Phish = Bad

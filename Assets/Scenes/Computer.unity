@@ -152,7 +152,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 691296787}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -274,7 +274,7 @@ GameObject:
   - component: {fileID: 167508015}
   - component: {fileID: 167508014}
   m_Layer: 5
-  m_Name: Button_Wifi (2)
+  m_Name: Three_Wifi_Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -292,11 +292,11 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 251211123}
-  m_RootOrder: 2
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -75.69999, y: -28.17}
+  m_AnchoredPosition: {x: -81, y: 1.9}
   m_SizeDelta: {x: 25, y: 25}
   m_Pivot: {x: 0.50000006, y: 0.50000006}
 --- !u!114 &167508014
@@ -406,7 +406,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &251211123
 RectTransform:
   m_ObjectHideFlags: 0
@@ -418,19 +418,19 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 836138653}
-  - {fileID: 352398773}
-  - {fileID: 167508013}
-  - {fileID: 652924378}
   - {fileID: 355923671}
+  - {fileID: 836138653}
+  - {fileID: 652924378}
+  - {fileID: 352398773}
   - {fileID: 2001653611}
+  - {fileID: 167508013}
   - {fileID: 1455067971}
   m_Father: {fileID: 691296787}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 269.9, y: -62.96}
+  m_AnchoredPosition: {x: 285.4, y: -81.915}
   m_SizeDelta: {x: -594.1, y: -267.05}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &251211124
@@ -482,7 +482,7 @@ GameObject:
   - component: {fileID: 352398775}
   - component: {fileID: 352398774}
   m_Layer: 5
-  m_Name: Button_Wifi (1)
+  m_Name: Two_Wifi_Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -500,11 +500,11 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 251211123}
-  m_RootOrder: 1
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -75.70003, y: -3.1699677}
+  m_AnchoredPosition: {x: -81.000015, y: 26.900032}
   m_SizeDelta: {x: 25, y: 25}
   m_Pivot: {x: 0.50000006, y: 0.50000006}
 --- !u!114 &352398774
@@ -609,7 +609,7 @@ GameObject:
   - component: {fileID: 355923673}
   - component: {fileID: 355923672}
   m_Layer: 5
-  m_Name: Text
+  m_Name: Wifi_Settings_Label
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -627,11 +627,11 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 251211123}
-  m_RootOrder: 4
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -41.690018, y: 46.15999}
+  m_AnchoredPosition: {x: -46.99, y: 76.22999}
   m_SizeDelta: {x: 102.38, y: 21.9}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &355923672
@@ -757,6 +757,94 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &487296979
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 487296980}
+  - component: {fileID: 487296983}
+  - component: {fileID: 487296982}
+  - component: {fileID: 487296981}
+  m_Layer: 5
+  m_Name: Desktop_Background
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &487296980
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 487296979}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 10.067941, y: 7.193632, z: 7.265713}
+  m_Children: []
+  m_Father: {fileID: 691296787}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0.868, y: 9.214}
+  m_SizeDelta: {x: 77.178, y: 56.878}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &487296981
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 487296979}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58738859e8ac53f429d104ddca9daa05, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  img: {fileID: 487296982}
+  url: 
+--- !u!114 &487296982
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 487296979}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 9354a42ca07386743bcb2d338ee4ca70, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &487296983
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 487296979}
+  m_CullTransparentMesh: 0
 --- !u!1 &621281182
 GameObject:
   m_ObjectHideFlags: 0
@@ -835,7 +923,7 @@ GameObject:
   - component: {fileID: 652924380}
   - component: {fileID: 652924379}
   m_Layer: 5
-  m_Name: Text
+  m_Name: One_Wifi_Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -853,11 +941,11 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 251211123}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 16.965, y: 15}
+  m_AnchoredPosition: {x: 11.665016, y: 45.07}
   m_SizeDelta: {x: 143.68, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &652924379
@@ -991,12 +1079,14 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 915549420}
+  - {fileID: 487296980}
   - {fileID: 79434791}
   - {fileID: 1599428089}
   - {fileID: 1203628855}
-  - {fileID: 2010946158}
   - {fileID: 1555351919}
   - {fileID: 251211123}
+  - {fileID: 1918733450}
+  - {fileID: 2010946158}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1018,7 +1108,7 @@ GameObject:
   - component: {fileID: 836138655}
   - component: {fileID: 836138654}
   m_Layer: 5
-  m_Name: Button_Wifi
+  m_Name: One_Wifi_Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1036,11 +1126,11 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 251211123}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -75.7, y: 21.83}
+  m_AnchoredPosition: {x: -80.999985, y: 51.9}
   m_SizeDelta: {x: 25, y: 25}
   m_Pivot: {x: 0.50000006, y: 0.5}
 --- !u!114 &836138654
@@ -1144,6 +1234,7 @@ GameObject:
   - component: {fileID: 915549420}
   - component: {fileID: 915549422}
   - component: {fileID: 915549421}
+  - component: {fileID: 915549423}
   m_Layer: 5
   m_Name: Monitor
   m_TagString: Untagged
@@ -1167,8 +1258,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1.8, y: -61.2}
-  m_SizeDelta: {x: 83.4, y: 83.4}
+  m_AnchoredPosition: {x: 0.010315, y: -0.0033493}
+  m_SizeDelta: {x: 79.458, y: 62.542}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &915549421
 MonoBehaviour:
@@ -1188,7 +1279,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: fcf69b00aa9e50243a4c4e59566f0de0, type: 3}
+  m_Sprite: {fileID: 0}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1206,6 +1297,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 915549419}
   m_CullTransparentMesh: 0
+--- !u!114 &915549423
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 915549419}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58738859e8ac53f429d104ddca9daa05, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  img: {fileID: 915549421}
+  url: https://raw.githubusercontent.com/bwarrend/HCC/master/Assets/Art/monitor.jpg
 --- !u!1 &1203628854
 GameObject:
   m_ObjectHideFlags: 0
@@ -1237,7 +1342,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1.4545312, z: 1}
   m_Children: []
   m_Father: {fileID: 691296787}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1335,7 +1440,7 @@ GameObject:
   - component: {fileID: 1455067973}
   - component: {fileID: 1455067972}
   m_Layer: 5
-  m_Name: Text (2)
+  m_Name: Three_Wifi_Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1357,7 +1462,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 17.65502, y: -35.9}
+  m_AnchoredPosition: {x: 12.355036, y: -5.830002}
   m_SizeDelta: {x: 143.68, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1455067972
@@ -1436,8 +1541,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 293.42, y: -167.33}
-  m_SizeDelta: {x: 42.49, y: 25.88}
+  m_AnchoredPosition: {x: 370.4, y: -184.8}
+  m_SizeDelta: {x: 37.61, y: 22.91}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1555351920
 MonoBehaviour:
@@ -1451,7 +1556,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0eb2f1c157a729540856c20aedbf4ccc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Panel: {fileID: 251211122}
+  gameobject: {fileID: 251211122}
 --- !u!114 &1555351921
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1574,7 +1679,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 691296787}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1683,6 +1788,79 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 195c919424bde6c4c85ae82a52c7b6f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1918733447
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1918733450}
+  - component: {fileID: 1918733449}
+  - component: {fileID: 1918733448}
+  m_Layer: 5
+  m_Name: Monitor_Off
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!114 &1918733448
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1918733447}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: e61765169d91c8d48993e4b230a2f6c4, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1918733449
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1918733447}
+  m_CullTransparentMesh: 0
+--- !u!224 &1918733450
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1918733447}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 10.067941, y: 7.193632, z: 7.265713}
+  m_Children: []
+  m_Father: {fileID: 691296787}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0.010315, y: -0.0033493}
+  m_SizeDelta: {x: 79.458, y: 62.542}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &2001653610
 GameObject:
   m_ObjectHideFlags: 0
@@ -1695,7 +1873,7 @@ GameObject:
   - component: {fileID: 2001653613}
   - component: {fileID: 2001653612}
   m_Layer: 5
-  m_Name: Text (1)
+  m_Name: Two_Wifi_Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1713,11 +1891,11 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 251211123}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 17.31001, y: -3.17}
+  m_AnchoredPosition: {x: 12.010027, y: 26.9}
   m_SizeDelta: {x: 142.99, y: 16.26}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2001653612
@@ -1774,7 +1952,7 @@ GameObject:
   - component: {fileID: 2010946160}
   - component: {fileID: 2010946159}
   m_Layer: 5
-  m_Name: Button_Quit
+  m_Name: Button_Monitor_OnOff
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1792,7 +1970,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 691296787}
-  m_RootOrder: 4
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1808,9 +1986,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 2010946157}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a83004912e20c0a42856c79e47fab795, type: 3}
+  m_Script: {fileID: 11500000, guid: 0eb2f1c157a729540856c20aedbf4ccc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameobject: {fileID: 1918733447}
 --- !u!114 &2010946160
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1855,7 +2034,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 2010946159}
-        m_MethodName: quitApp
+        m_MethodName: OpenPanel
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1863,7 +2042,7 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: Internet
-          m_BoolArgument: 0
+          m_BoolArgument: 1
         m_CallState: 2
 --- !u!114 &2010946161
 MonoBehaviour:
