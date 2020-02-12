@@ -5,7 +5,7 @@ using UnityEngine;
 public class Toggle_GameObject : MonoBehaviour
 {
     public GameObject gameobject;
-
+    //This is a sritpthd
     public void OpenPanel()
     {
         if (gameobject != null)
