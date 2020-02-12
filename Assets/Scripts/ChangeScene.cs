@@ -8,5 +8,5 @@ public class StartButtonChangeScene : MonoBehaviour
     public void GoToScene(string sceneName)
     {
         SceneManager.LoadScene(sceneName);
-    }
+    }//----IAM HERE----
 }
