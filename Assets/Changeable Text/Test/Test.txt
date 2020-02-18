@@ -4,12 +4,12 @@ FirstQuestion
 1WrongAnswer
 1WrongAnswer
 SecondQuestion
+2WrongAnswer
+2WrongAnswer
+2WrongAnswer
 2CorrectAnswer
-2WrongAnswer
-2WrongAnswer
-2WrongAnswer
 ThirdQuestion
+3WrongAnswer
+3WrongAnswer
 3CorrectAnswer
-3WrongAnswer
-3WrongAnswer
 3WrongAnswer
