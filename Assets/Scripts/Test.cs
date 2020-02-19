@@ -6,8 +6,8 @@ using UnityEngine.UI;
 public class NewBehaviourScript : MonoBehaviour
 {
 
-    public string[100] TestContent;
-    public ToggleGroup q1;
+    //public string[100] TestContent;
+    //public ToggleGroup q1;
 
     void Start()
     {
@@ -40,6 +40,6 @@ public class NewBehaviourScript : MonoBehaviour
      *         }
      *  
      *  -Show score and then maybe display incorrect questions here
-     *  
+     */ 
 
 }
