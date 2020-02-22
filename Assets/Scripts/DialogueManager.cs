@@ -6,58 +6,125 @@ using UnityEngine.UI;
 
 public class DialogueManager : MonoBehaviour
 {
-    public Text nameText;
-    public Text dialogueText;
-
-    public Animator animator;
-
-    private Queue<string> sentences;
-
-
-    // Start is called before the first frame update
-    void Start()
+    public static DialogueManager instance;
+    private void Awake()
     {
-        sentences = new Queue<string>();
-    }
-
-    public void StartDialogue (Dialogue dialogue)
-    {
-        animator.SetBool("IsOpen", true);
-        nameText.text = dialogue.name;
-        sentences.Clear();
-        foreach (string sentence in dialogue.sentences)
+        if (instance != null)
         {
-            sentences.Enqueue(sentence);
+            Debug.LogWarning("fix this " + gameObject.name);
         }
-        DisplayNextSentence();
+        else
+        {
+            instance = this;
+        }
     }
 
-    public void DisplayNextSentence()
+
+    public GameObject dialogueBox;
+
+    public Text dialogueName;
+    public Text dialogueText;
+    public Image dialoguePortrait;
+    public float delay = 0.001f;
+
+    public Queue<Dialogue.Info> dialogueInfo = new Queue<Dialogue.Info>();
+
+    public void EnqueueDialogue(Dialogue db)
     {
-        if (sentences.Count == 0)
+        dialogueBox.SetActive(true);
+        dialogueInfo.Clear();
+        foreach(Dialogue.Info info in db.dialogueInfo)
         {
-            EndDialogue();
+            dialogueInfo.Enqueue(info);
+        }
+        DequeueDialogue();
+    }
+
+    public void DequeueDialogue()
+    {
+        if (dialogueInfo.Count == 0)
+        {
+            EndOfDialogue();
             return;
         }
-        string sentence = sentences.Dequeue();
-        StopAllCoroutines();
-        StartCoroutine(TypeSentence(sentence));
+        Dialogue.Info info = dialogueInfo.Dequeue();
 
+        dialogueName.text = info.name;
+        dialogueText.text = info.myText;
+        dialoguePortrait.sprite = info.portrait;
+
+        StartCoroutine(TypeText(info));
     }
-    IEnumerator TypeSentence (string sentence)
+
+    IEnumerator TypeText(Dialogue.Info info)
     {
         dialogueText.text = "";
-        foreach(char letter in sentence.ToCharArray())
+        foreach(char c in info.myText.ToCharArray())
         {
-            dialogueText.text += letter;
+            yield return new WaitForSeconds(delay);
+            dialogueText.text += c;
             yield return null;
         }
     }
 
-
-    void EndDialogue()
+    public void EndOfDialogue()
     {
-        animator.SetBool("IsOpen", false);
+        dialogueBox.SetActive(false);
     }
+
+
+    //public Text nameText;
+    //public Text dialogueText;
+
+    //public Animator animator;
+
+    //private Queue<string> sentences;
+
+
+    //// Start is called before the first frame update
+    //void Start()
+    //{
+    //    sentences = new Queue<string>();
+    //}
+
+    //public void StartDialogue (Dialogue dialogue)
+    //{
+    //    animator.SetBool("IsOpen", true);
+    //    nameText.text = dialogue.name;
+    //    sentences.Clear();
+    //    foreach (string sentence in dialogue.sentences)
+    //    {
+    //        sentences.Enqueue(sentence);
+    //    }
+    //    DisplayNextSentence();
+    //}
+
+    //public void DisplayNextSentence()
+    //{
+    //    if (sentences.Count == 0)
+    //    {
+    //        EndDialogue();
+    //        return;
+    //    }
+    //    string sentence = sentences.Dequeue();
+    //    StopAllCoroutines();
+    //    StartCoroutine(TypeSentence(sentence));
+
+    //}
+    //IEnumerator TypeSentence (string sentence)
+    //{
+    //    dialogueText.text = "";
+    //    foreach(char letter in sentence.ToCharArray())
+    //    {
+    //        dialogueText.text += letter;
+    //        yield return null;
+    //    }
+    //}
+
+
+    //void EndDialogue()
+    //{
+    //    animator.SetBool("IsOpen", false);
+    //}
 
 }
