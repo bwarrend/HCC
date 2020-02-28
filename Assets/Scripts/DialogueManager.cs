@@ -6,17 +6,21 @@ using UnityEngine.UI;
 
 public class DialogueManager : MonoBehaviour
 {
+    
     public static DialogueManager instance;
     private void Awake()
     {
+
         if (instance != null)
         {
-            Debug.LogWarning("fix this " + gameObject.name);
+            //Debug.LogWarning("fix this " + gameObject.name);
         }
         else
         {
             instance = this;
         }
+
+
     }
 
 
@@ -25,7 +29,7 @@ public class DialogueManager : MonoBehaviour
     public Text dialogueName;
     public Text dialogueText;
     public Image dialoguePortrait;
-    public float delay = 0.001f;
+    public float delay = 0.0001f;
 
     public Queue<Dialogue.Info> dialogueInfo = new Queue<Dialogue.Info>();
 
@@ -50,6 +54,14 @@ public class DialogueManager : MonoBehaviour
         Dialogue.Info info = dialogueInfo.Dequeue();
 
         dialogueName.text = info.name;
+
+        WWW www = new WWW(info.url);
+        while(!www.isDone){
+            //Downloading the wwww assets
+        }
+        string text = www.text;
+        info.myText = text;
+ 
         dialogueText.text = info.myText;
         dialoguePortrait.sprite = info.portrait;
 
