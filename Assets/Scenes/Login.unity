@@ -1123,6 +1123,7 @@ MonoBehaviour:
   dialogueText: {fileID: 81726174}
   dialoguePortrait: {fileID: 1661665806}
   delay: 0.01
+  nextScene: Computer
 --- !u!4 &1788935055
 Transform:
   m_ObjectHideFlags: 0

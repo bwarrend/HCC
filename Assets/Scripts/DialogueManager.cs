@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 
 public class DialogueManager : MonoBehaviour
@@ -30,6 +31,7 @@ public class DialogueManager : MonoBehaviour
     public Text dialogueText;
     public Image dialoguePortrait;
     public float delay = 0.0001f;
+    public string nextScene;
 
     public Queue<Dialogue.Info> dialogueInfo = new Queue<Dialogue.Info>();
 
@@ -82,6 +84,7 @@ public class DialogueManager : MonoBehaviour
     public void EndOfDialogue()
     {
         dialogueBox.SetActive(false);
+        SceneManager.LoadScene(nextScene);
     }
 
 
