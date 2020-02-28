@@ -12,7 +12,13 @@ public class Dialogue : ScriptableObject
         public Sprite portrait;
         [TextArea(3, 10)]
         public string myText;
+        public string url;
     }
+
+ 
+
     [Header("Insert Dialogue information Below")]
     public Info[] dialogueInfo;
+
+
 }
