@@ -15,21 +15,13 @@ MonoBehaviour:
   dialogueInfo:
   - name: Acai Bowl Hacker
     portrait: {fileID: 21300000, guid: 8563a971a51fb3c4d849c3ca287f1eea, type: 3}
-    myText: 'HawaiianIslandBanks@hib.com
-
-      Please Verify Identity
-
-'
-    url: https://raw.githubusercontent.com/bwarrend/HCC/master/Assets/Changeable%20Text/Email/Tab%202/Tab2.txt
+    myText: Welcome to the Hawaii Cyber Challenge! I will be your guide...
+    url: https://raw.githubusercontent.com/bwarrend/HCC/master/Assets/Changeable%20Text/LoginD/first.txt
   - name: Acai Bowl Hacker
     portrait: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
-    myText: 'Smith.John@gmail.com
-
-'
-    url: https://raw.githubusercontent.com/bwarrend/HCC/master/Assets/Changeable%20Text/Email/Tab%203/Tab3.txt
+    myText: Look! I'm a white circle now!
+    url: https://raw.githubusercontent.com/bwarrend/HCC/master/Assets/Changeable%20Text/LoginD/second.txt
   - name: Acai Bowl Hacker
     portrait: {fileID: 10915, guid: 0000000000000000f000000000000000, type: 0}
-    myText: 'IRS-gov.us
-
-'
-    url: https://raw.githubusercontent.com/bwarrend/HCC/master/Assets/Changeable%20Text/Email/Tab%205/Tab5.txt
+    myText: '...work in progress.'
+    url: https://raw.githubusercontent.com/bwarrend/HCC/master/Assets/Changeable%20Text/LoginD/third.txt

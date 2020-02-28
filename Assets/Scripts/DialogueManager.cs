@@ -57,19 +57,24 @@ public class DialogueManager : MonoBehaviour
 
         dialogueName.text = info.name;
 
-        WWW www = new WWW(info.url);
-        while(!www.isDone){
-            //Downloading the wwww assets
-        }
-        string text = www.text;
-        info.myText = text;
+
+        pullTextUrl(info);
  
         dialogueText.text = info.myText;
         dialoguePortrait.sprite = info.portrait;
 
+ 
         StartCoroutine(TypeText(info));
+
+
     }
 
+    IEnumerator pullTextUrl(Dialogue.Info info){
+        WWW www = new WWW(info.url);
+        yield return www;
+        string text = www.text;
+        info.myText = text;
+    }
     IEnumerator TypeText(Dialogue.Info info)
     {
         dialogueText.text = "";
