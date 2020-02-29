@@ -31,14 +31,37 @@ public class DialogueManager : MonoBehaviour
     public Text dialogueText;
     public Image dialoguePortrait;
     public float delay = 0.0001f;
+    private bool isCurrentlyTyping;
+    private string completeText;
     public string nextScene;
 
     public Queue<Dialogue.Info> dialogueInfo = new Queue<Dialogue.Info>();
 
+    private bool isDialogueOption;
+    public GameObject dialogueOptionUI;
+    private bool inDialogue;
+    public GameObject[] optionButtons;
+    private int optionsAmount;
+
     public void EnqueueDialogue(Dialogue db)
     {
+        if (inDialogue) return;
+        inDialogue = true;
+
         dialogueBox.SetActive(true);
         dialogueInfo.Clear();
+
+        if (db is DialogueOptions)
+        {
+            isDialogueOption = true;
+            DialogueOptions dialogueOptions = db as DialogueOptions;
+            optionsAmount = dialogueOptions.optionsInfo.Length;
+        }
+        else
+        {
+            isDialogueOption = false;
+        }
+
         foreach(Dialogue.Info info in db.dialogueInfo)
         {
             dialogueInfo.Enqueue(info);
@@ -48,12 +71,23 @@ public class DialogueManager : MonoBehaviour
 
     public void DequeueDialogue()
     {
+        if (isCurrentlyTyping == true)
+        {
+            CompleteText();
+            StopAllCoroutines();
+            isCurrentlyTyping = false;
+            return;
+        }
+
         if (dialogueInfo.Count == 0)
         {
             EndOfDialogue();
             return;
         }
+
+        
         Dialogue.Info info = dialogueInfo.Dequeue();
+        completeText = info.myText;
 
         dialogueName.text = info.name;
 
@@ -62,8 +96,7 @@ public class DialogueManager : MonoBehaviour
  
         dialogueText.text = info.myText;
         dialoguePortrait.sprite = info.portrait;
-
- 
+        dialogueText.text = "";
         StartCoroutine(TypeText(info));
 
 
@@ -77,74 +110,37 @@ public class DialogueManager : MonoBehaviour
     }
     IEnumerator TypeText(Dialogue.Info info)
     {
-        dialogueText.text = "";
+        isCurrentlyTyping = true;
         foreach(char c in info.myText.ToCharArray())
         {
             yield return new WaitForSeconds(delay);
             dialogueText.text += c;
-            yield return null;
         }
+        isCurrentlyTyping = false;
+    }
+
+    private void CompleteText()
+    {
+        dialogueText.text = completeText;
     }
 
     public void EndOfDialogue()
     {
         dialogueBox.SetActive(false);
-        SceneManager.LoadScene(nextScene);
+        inDialogue = false;
+        OptionsLogic();
+        //SceneManager.LoadScene(nextScene);
     }
 
-
-    //public Text nameText;
-    //public Text dialogueText;
-
-    //public Animator animator;
-
-    //private Queue<string> sentences;
-
-
-    //// Start is called before the first frame update
-    //void Start()
-    //{
-    //    sentences = new Queue<string>();
-    //}
-
-    //public void StartDialogue (Dialogue dialogue)
-    //{
-    //    animator.SetBool("IsOpen", true);
-    //    nameText.text = dialogue.name;
-    //    sentences.Clear();
-    //    foreach (string sentence in dialogue.sentences)
-    //    {
-    //        sentences.Enqueue(sentence);
-    //    }
-    //    DisplayNextSentence();
-    //}
-
-    //public void DisplayNextSentence()
-    //{
-    //    if (sentences.Count == 0)
-    //    {
-    //        EndDialogue();
-    //        return;
-    //    }
-    //    string sentence = sentences.Dequeue();
-    //    StopAllCoroutines();
-    //    StartCoroutine(TypeSentence(sentence));
-
-    //}
-    //IEnumerator TypeSentence (string sentence)
-    //{
-    //    dialogueText.text = "";
-    //    foreach(char letter in sentence.ToCharArray())
-    //    {
-    //        dialogueText.text += letter;
-    //        yield return null;
-    //    }
-    //}
-
-
-    //void EndDialogue()
-    //{
-    //    animator.SetBool("IsOpen", false);
-    //}
-
+    private void OptionsLogic()
+    {
+        if (isDialogueOption == true)
+        {
+            dialogueOptionUI.SetActive(true);
+            for (int i = 0; i < optionsAmount; i++)
+            {
+                optionButtons[i].SetActive(true);
+            }
+        }
+    }
 }
