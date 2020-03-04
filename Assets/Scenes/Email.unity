@@ -131,8 +131,9 @@ GameObject:
   - component: {fileID: 56601812}
   - component: {fileID: 56601814}
   - component: {fileID: 56601813}
+  - component: {fileID: 56601815}
   m_Layer: 5
-  m_Name: Image
+  m_Name: Apple_Image
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -193,6 +194,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 56601811}
   m_CullTransparentMesh: 0
+--- !u!114 &56601815
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 56601811}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58738859e8ac53f429d104ddca9daa05, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  img: {fileID: 56601813}
+  url: https://raw.githubusercontent.com/bwarrend/HCC/master/Assets/Art/apple%20logo.png
 --- !u!1 &128578498 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8933408549657575068, guid: b0a349ee649ef0f49a0af9593a575c66,
@@ -226,7 +241,7 @@ GameObject:
   - component: {fileID: 135584651}
   - component: {fileID: 135584650}
   m_Layer: 5
-  m_Name: Button
+  m_Name: Safe_Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -455,8 +470,9 @@ GameObject:
   - component: {fileID: 433627700}
   - component: {fileID: 433627702}
   - component: {fileID: 433627701}
+  - component: {fileID: 433627703}
   m_Layer: 5
-  m_Name: Image
+  m_Name: IRS_Image
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -517,6 +533,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 433627699}
   m_CullTransparentMesh: 0
+--- !u!114 &433627703
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 433627699}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58738859e8ac53f429d104ddca9daa05, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  img: {fileID: 433627701}
+  url: https://raw.githubusercontent.com/bwarrend/HCC/master/Assets/Art/irs%20logo.png
 --- !u!1 &470582277
 GameObject:
   m_ObjectHideFlags: 0
@@ -699,7 +729,7 @@ GameObject:
   - component: {fileID: 485179257}
   - component: {fileID: 485179256}
   m_Layer: 5
-  m_Name: Button
+  m_Name: Junk_Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -991,7 +1021,7 @@ GameObject:
   - component: {fileID: 627622713}
   - component: {fileID: 627622712}
   m_Layer: 5
-  m_Name: Button
+  m_Name: Junk_Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1307,8 +1337,9 @@ GameObject:
   - component: {fileID: 726449107}
   - component: {fileID: 726449109}
   - component: {fileID: 726449108}
+  - component: {fileID: 726449110}
   m_Layer: 5
-  m_Name: Image
+  m_Name: Welcome_image
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1369,6 +1400,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 726449106}
   m_CullTransparentMesh: 0
+--- !u!114 &726449110
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 726449106}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58738859e8ac53f429d104ddca9daa05, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  img: {fileID: 726449108}
+  url: https://raw.githubusercontent.com/bwarrend/HCC/master/Assets/Art/welcome.jpg
 --- !u!114 &727203735 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2716596064251741627, guid: b0a349ee649ef0f49a0af9593a575c66,
@@ -2490,7 +2535,7 @@ GameObject:
   - component: {fileID: 1246081727}
   - component: {fileID: 1246081726}
   m_Layer: 5
-  m_Name: Button
+  m_Name: Junk_Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3023,7 +3068,7 @@ GameObject:
   - component: {fileID: 1623947307}
   - component: {fileID: 1623947306}
   m_Layer: 5
-  m_Name: Button
+  m_Name: Safe_Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3397,8 +3442,9 @@ GameObject:
   - component: {fileID: 1690749429}
   - component: {fileID: 1690749431}
   - component: {fileID: 1690749430}
+  - component: {fileID: 1690749432}
   m_Layer: 5
-  m_Name: Image
+  m_Name: Bank_image
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3420,7 +3466,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -70.388, y: 127.1}
+  m_AnchoredPosition: {x: -84, y: 136.09}
   m_SizeDelta: {x: 113.4, y: 47.9}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1690749430
@@ -3459,6 +3505,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1690749428}
   m_CullTransparentMesh: 0
+--- !u!114 &1690749432
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1690749428}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58738859e8ac53f429d104ddca9daa05, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  img: {fileID: 1690749430}
+  url: https://raw.githubusercontent.com/bwarrend/HCC/master/Assets/Art/bank1.PNG
 --- !u!1001 &1692293895
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3749,7 +3809,7 @@ GameObject:
   - component: {fileID: 1748374030}
   - component: {fileID: 1748374029}
   m_Layer: 5
-  m_Name: Button
+  m_Name: Proceed_Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4104,7 +4164,7 @@ GameObject:
   - component: {fileID: 1918296673}
   - component: {fileID: 1918296672}
   m_Layer: 5
-  m_Name: Button
+  m_Name: Junk_Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4387,7 +4447,7 @@ GameObject:
   - component: {fileID: 1941042239}
   - component: {fileID: 1941042238}
   m_Layer: 5
-  m_Name: Button
+  m_Name: Safe_Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4606,8 +4666,9 @@ GameObject:
   - component: {fileID: 2010253597}
   - component: {fileID: 2010253599}
   - component: {fileID: 2010253598}
+  - component: {fileID: 2010253600}
   m_Layer: 5
-  m_Name: Image
+  m_Name: NerdBrigade_Image
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4668,6 +4729,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2010253596}
   m_CullTransparentMesh: 0
+--- !u!114 &2010253600
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2010253596}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58738859e8ac53f429d104ddca9daa05, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  img: {fileID: 2010253598}
+  url: https://raw.githubusercontent.com/bwarrend/HCC/master/Assets/Art/employee%20logo.PNG
 --- !u!1 &2066286218
 GameObject:
   m_ObjectHideFlags: 0
@@ -4681,7 +4756,7 @@ GameObject:
   - component: {fileID: 2066286221}
   - component: {fileID: 2066286220}
   m_Layer: 5
-  m_Name: Button
+  m_Name: Safe_Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
