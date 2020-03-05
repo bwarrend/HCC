@@ -103,10 +103,16 @@ public class DialogueManager : MonoBehaviour
     }
 
     IEnumerator pullTextUrl(Dialogue.Info info){
+        //Disable annoying obsolete warning
+        #pragma warning disable 0618
+        
         WWW www = new WWW(info.url);
         yield return www;
         string text = www.text;
         info.myText = text;
+
+        //Restore warnings
+        #pragma warning restore 0618
     }
     IEnumerator TypeText(Dialogue.Info info)
     {

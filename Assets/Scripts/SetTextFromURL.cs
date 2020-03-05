@@ -10,8 +10,14 @@ public class SetTextFromURL : MonoBehaviour{
 
     IEnumerator Start()
     {
+        //Disable the annoying obsolete message
+        #pragma warning disable 0618
+        
         WWW www = new WWW(url);
         yield return www;
         text.text = www.text;
+
+        //Restore warnings
+        #pragma warning restore 0618
     }
 }

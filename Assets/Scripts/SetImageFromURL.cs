@@ -9,9 +9,17 @@ public class SetImageFromURL : MonoBehaviour{
 	public string url;
 	IEnumerator Start()
 	{
+		//Disable  annoying obsolete warning
+		#pragma warning disable 0618
+		
 		WWW www = new WWW(url);
 		//UnityWebRequest www = UnityWebRequest.Get(url);
 		yield return www;
 		img.sprite = Sprite.Create(www.texture, new Rect(0, 0, www.texture.width, www.texture.height), new Vector2(0, 0));
+
+		//Restore warnings
+        #pragma warning restore 0618
+	
+	
 	}
 }

@@ -10,6 +10,9 @@ public class SubmitButton : MonoBehaviour
 
     public void ChangeScene(string sceneName)
     {
+        //Disable annoying obsolete message
+        #pragma warning disable 0618
+        
         Application.LoadLevel(sceneName);
     }
 }
