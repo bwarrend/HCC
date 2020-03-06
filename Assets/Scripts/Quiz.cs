@@ -13,11 +13,16 @@ public class Quiz : MonoBehaviour{
     public static string[] AnswerKey = new string[20];
     public static string[] userAnswers;
 
-    public ToggleGroup Q1_TG;
+    //public ToggleGroup Q1_TG, Q2_TG, Q3_TG, Q4_TG, Q5_TG, Q6_TG, Q7_TG, Q8_TG, Q9_TG, Q10_TG,
+                       //Q11_TG, Q12_TG, Q13_TG, Q14_TG, Q15_TG, Q16_TG, Q17_TG, Q18_TG, Q19_TG, Q20_TG;
+    public ToggleGroup[] toggleGroups = new ToggleGroup[20];
+
+
     
     //public ToggleGroup q1;
 
     void Start(){
+
 
         //Pull  quiz from online and store in one giant string
         ContentFromUrl = getFromUrl(URLQuestions);
@@ -65,9 +70,12 @@ public class Quiz : MonoBehaviour{
 
 
     void Submit_Quiz(){
-        if(Q1_TG.AnyTogglesOn()){
-
+        //Pull all the answers from the Quiz and store them as A-D in an array called userAnswers
+        for(int i = 0; i < toggleGroups.Length; ++i){
+            userAnswers[i] = getAnswerFromGroup(toggleGroups[i]);
         }
+
+        
     }
 
     string getAnswerFromGroup(ToggleGroup TG){
