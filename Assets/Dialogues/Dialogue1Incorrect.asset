@@ -10,26 +10,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5a68ce0579b44514e8476e313af98fbe, type: 3}
-  m_Name: Dialogue1
+  m_Name: Dialogue1Incorrect
   m_EditorClassIdentifier: 
   dialogueInfo:
   - name: Acai Bowl Hacker
     portrait: {fileID: 21300000, guid: 8563a971a51fb3c4d849c3ca287f1eea, type: 3}
-    myText: Welcome to the Hawaii Cyber Challenge! I will be your guide...
+    myText: Try again... There's a better option.
     url: https://raw.githubusercontent.com/bwarrend/HCC/master/Assets/Changeable%20Text/LoginD/first.txt
-  - name: Acai Bowl Hacker
-    portrait: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
-    myText: Look! I'm a white circle now!fasdfsadfasdf
-    url: https://raw.githubusercontent.com/bwarrend/HCC/master/Assets/Changeable%20Text/LoginD/second.txt
-  - name: Acai Bowl Hacker
-    portrait: {fileID: 0}
-    myText: '...work in progress. ...work in progress. ...work in progress. ...work
-      in progress. ...work in progress.'
-    url: https://raw.githubusercontent.com/bwarrend/HCC/master/Assets/Changeable%20Text/LoginD/third.txt
   questionText: Which of these has the best password option?
   optionsInfo:
   - buttonName: password
-    nextDialogue: {fileID: 11400000, guid: 47e504b78e9b08047b8c832121326e2d, type: 2}
+    nextDialogue: {fileID: 11400000}
     myEvent:
       m_PersistentCalls:
         m_Calls:
@@ -45,7 +36,7 @@ MonoBehaviour:
             m_BoolArgument: 0
           m_CallState: 2
   - buttonName: qwerty
-    nextDialogue: {fileID: 11400000, guid: 47e504b78e9b08047b8c832121326e2d, type: 2}
+    nextDialogue: {fileID: 11400000}
     myEvent:
       m_PersistentCalls:
         m_Calls:
@@ -61,7 +52,7 @@ MonoBehaviour:
             m_BoolArgument: 0
           m_CallState: 2
   - buttonName: 12345
-    nextDialogue: {fileID: 11400000, guid: 47e504b78e9b08047b8c832121326e2d, type: 2}
+    nextDialogue: {fileID: 11400000}
     myEvent:
       m_PersistentCalls:
         m_Calls:

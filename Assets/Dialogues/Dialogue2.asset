@@ -10,26 +10,23 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5a68ce0579b44514e8476e313af98fbe, type: 3}
-  m_Name: DialogueOptionsTest
+  m_Name: Dialogue2
   m_EditorClassIdentifier: 
   dialogueInfo:
   - name: Acai Bowl Hacker
     portrait: {fileID: 21300000, guid: 8563a971a51fb3c4d849c3ca287f1eea, type: 3}
-    myText: Welcome to the Hawaii Cyber Challenge! I will be your guide...
+    myText: Nice! It is recommended that a good password have at least one uppercase
+      letter and a number.
     url: https://raw.githubusercontent.com/bwarrend/HCC/master/Assets/Changeable%20Text/LoginD/first.txt
   - name: Acai Bowl Hacker
-    portrait: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
-    myText: Look! I'm a white circle now!
-    url: https://raw.githubusercontent.com/bwarrend/HCC/master/Assets/Changeable%20Text/LoginD/second.txt
-  - name: Acai Bowl Hacker
-    portrait: {fileID: 0}
-    myText: '...work in progress. ...work in progress. ...work in progress. ...work
-      in progress. ...work in progress.'
-    url: https://raw.githubusercontent.com/bwarrend/HCC/master/Assets/Changeable%20Text/LoginD/third.txt
-  questionText: Which of these has the best password option?
+    portrait: {fileID: 21300000, guid: 8563a971a51fb3c4d849c3ca287f1eea, type: 3}
+    myText: Special characters such as an explamation mark (!) make passwords even
+      stronger.
+    url: https://raw.githubusercontent.com/bwarrend/HCC/master/Assets/Changeable%20Text/LoginD/first.txt
+  questionText: How about now?
   optionsInfo:
-  - buttonName: password
-    nextDialogue: {fileID: 0}
+  - buttonName: Password
+    nextDialogue: {fileID: 11400000, guid: 3bd0cd57b1739c5409951c96e1b77d9b, type: 2}
     myEvent:
       m_PersistentCalls:
         m_Calls:
@@ -44,8 +41,8 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-  - buttonName: qwerty
-    nextDialogue: {fileID: 0}
+  - buttonName: PassWord123!
+    nextDialogue: {fileID: 11400000, guid: 4fc471ba3ad77a34d9d7aa4a9ce12228, type: 2}
     myEvent:
       m_PersistentCalls:
         m_Calls:
@@ -60,8 +57,8 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-  - buttonName: 12345
-    nextDialogue: {fileID: 0}
+  - buttonName: 123PASSWORD
+    nextDialogue: {fileID: 11400000, guid: 3bd0cd57b1739c5409951c96e1b77d9b, type: 2}
     myEvent:
       m_PersistentCalls:
         m_Calls:
@@ -76,8 +73,8 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-  - buttonName: PassWord123
-    nextDialogue: {fileID: 11400000, guid: cf03c81ae1191d9449fb0f95f77fe813, type: 2}
+  - buttonName: password123
+    nextDialogue: {fileID: 11400000, guid: 3bd0cd57b1739c5409951c96e1b77d9b, type: 2}
     myEvent:
       m_PersistentCalls:
         m_Calls:

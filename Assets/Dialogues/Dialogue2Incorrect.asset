@@ -10,23 +10,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5a68ce0579b44514e8476e313af98fbe, type: 3}
-  m_Name: RegularDialogue
+  m_Name: Dialogue2Incorrect
   m_EditorClassIdentifier: 
   dialogueInfo:
   - name: Acai Bowl Hacker
     portrait: {fileID: 21300000, guid: 8563a971a51fb3c4d849c3ca287f1eea, type: 3}
-    myText: Nice! It is recommended that a good password have at least one uppercase
-      letter and a number.
-    url: https://raw.githubusercontent.com/bwarrend/HCC/master/Assets/Changeable%20Text/LoginD/first.txt
-  - name: Acai Bowl Hacker
-    portrait: {fileID: 21300000, guid: 8563a971a51fb3c4d849c3ca287f1eea, type: 3}
-    myText: Special characters such as an explamation mark (!) make passwords even
-      stronger.
+    myText: Try again... Remember special characters.
     url: https://raw.githubusercontent.com/bwarrend/HCC/master/Assets/Changeable%20Text/LoginD/first.txt
   questionText: How about now?
   optionsInfo:
   - buttonName: Password
-    nextDialogue: {fileID: 0}
+    nextDialogue: {fileID: 11400000}
     myEvent:
       m_PersistentCalls:
         m_Calls:
@@ -41,8 +35,8 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-  - buttonName: Password123
-    nextDialogue: {fileID: 0}
+  - buttonName: PassWord123!
+    nextDialogue: {fileID: 11400000, guid: 4fc471ba3ad77a34d9d7aa4a9ce12228, type: 2}
     myEvent:
       m_PersistentCalls:
         m_Calls:
@@ -58,7 +52,7 @@ MonoBehaviour:
             m_BoolArgument: 0
           m_CallState: 2
   - buttonName: 123PASSWORD
-    nextDialogue: {fileID: 0}
+    nextDialogue: {fileID: 11400000}
     myEvent:
       m_PersistentCalls:
         m_Calls:
@@ -73,8 +67,8 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-  - buttonName: PassWord123!
-    nextDialogue: {fileID: 0}
+  - buttonName: password123
+    nextDialogue: {fileID: 11400000}
     myEvent:
       m_PersistentCalls:
         m_Calls:

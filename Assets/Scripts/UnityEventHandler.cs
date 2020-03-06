@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.EventSystems;
+using UnityEngine.SceneManagement;
 
 public class UnityEventHandler : MonoBehaviour, IPointerDownHandler
 {
@@ -18,6 +19,10 @@ public class UnityEventHandler : MonoBehaviour, IPointerDownHandler
         if(myDialogue != null)
         {
             DialogueManager.instance.EnqueueDialogue(myDialogue);
+        }
+        else
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
     }
 }
