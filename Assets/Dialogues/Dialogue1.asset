@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b2fe3fc4270337c4b932a37e6c8d1e07, type: 3}
-  m_Name: Test
+  m_Name: Dialogue1
   m_EditorClassIdentifier: 
   dialogueInfo:
   - name: Acai Bowl Hacker
