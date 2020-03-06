@@ -3,35 +3,50 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using System.Linq;
 
-public class Quiz : MonoBehaviour
-{
+public class Quiz : MonoBehaviour{
     public string ContentFromUrl;
     public string URLQuestions;
     public string URLAnswerKey;
-    public string[] QuestionsAndAnswers = new string[100];
+    public static string[] QuestionsAndAnswers = new string[100];
+    public static string[] AnswerKey = new string[20];
+    public static string[] userAnswers;
+
+    public ToggleGroup Q1_TG;
     
     //public ToggleGroup q1;
 
     void Start(){
 
+        //Pull  quiz from online and store in one giant string
         ContentFromUrl = getFromUrl(URLQuestions);
 
+        /* DEBUG TEXT
         Debug.Log(ContentFromUrl);
+        */
 
+        //Split the string into an array based on newline
         QuestionsAndAnswers = ContentFromUrl.Split('\n');
 
+        /* DEBUG TEXT
         for(int i = 0; i < QuestionsAndAnswers.Length; ++i){
             Debug.Log(i + ":   " + QuestionsAndAnswers[i]);
         }
-        
+        */
 
+        //Get answer key and store in one string
+        ContentFromUrl = getFromUrl(URLAnswerKey);
         
+        //Split string into array based on newline
+        AnswerKey = ContentFromUrl.Split('\n');        
     }
 
     string getFromUrl(string url){
         
+        #pragma warning disable 0618 //Remove annoying warning
         WWW www = new WWW(url);
+        #pragma warning restore 0618 //Restore future warnings
         
 
         float startTimer = Time.time;
@@ -41,16 +56,42 @@ public class Quiz : MonoBehaviour
             float currentTime = Time.time;
             if(currentTime == startTimer+5){
                 Debug.Log("WE TIMED OUT");
-                SceneManager.LoadScene("Computer");                
+                SceneManager.LoadScene("Computer");
+                //Ideally we should tell the user and also make sure they don't lose progress / still have access to quiz              
             }
         }
         return www.text;
     }
 
 
-    void Update() {
-        //Debug.Log(ContentFromUrl);
-        
+    void Submit_Quiz(){
+        if(Q1_TG.AnyTogglesOn()){
+
+        }
+    }
+
+    string getAnswerFromGroup(ToggleGroup TG){
+        Toggle answer = TG.ActiveToggles().FirstOrDefault();
+        string letterAnswer = "E";
+
+        switch(answer.name){
+            case "Toggle_A":
+                letterAnswer = "A";
+                break;
+            case "Toggle_B":
+                letterAnswer = "B";
+                break;
+            case "Toggle_C":
+                letterAnswer = "C";
+                break;
+            case "Toggle_D":
+                letterAnswer = "D";
+                break;
+            default:
+                break;
+        }
+
+        return letterAnswer;
     }
 
 
@@ -59,14 +100,14 @@ public class Quiz : MonoBehaviour
 
      * 
      * X-I want to make a public string array here.
-     * -Then pull the questions/answers .txt from website
-     * -Split it into the array based on '\n' escape character
-     * -Set the text of the questions/answers based on string
+     * X-Then pull the questions/answers .txt from website
+     * X-Split it into the array based on '\n' escape character
+     * X-Set the text of the questions/answers based on string
      *      -TestContent[0] = First question
      *      -TestContent[1] = Question 1 answer 1
      *      -TestContent[2] = Question 1 answer 2
      *      -etc.
-     * -Pull answer key to answers[] array
+     * x-Pull answer key to answers[] array
      * -Make boolean array for questions right and wrong, set all to false
      * -Once submit button is pressed, check each answer based on the toggle group
      *      -ToggleGroup Question_1;
