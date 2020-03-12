@@ -10,16 +10,19 @@ public class Quiz : MonoBehaviour{
     public string URLQuestions;
     public string URLAnswerKey;
     public static string[] QuestionsAndAnswers = new string[100];
-    public static string[] AnswerKey = new string[20];
+    public static string[] answerKey = new string[20];
     public static string[] userAnswers;
+    public static bool[] correctIncorrect;
+    public GameObject scorePanel;
+    public Text scoreText;
+    public Text correctAnswersText;
+    public Text questionsText;
 
-    //public ToggleGroup Q1_TG, Q2_TG, Q3_TG, Q4_TG, Q5_TG, Q6_TG, Q7_TG, Q8_TG, Q9_TG, Q10_TG,
-                       //Q11_TG, Q12_TG, Q13_TG, Q14_TG, Q15_TG, Q16_TG, Q17_TG, Q18_TG, Q19_TG, Q20_TG;
+    private int correctAnswers = 0;
+    private const int maxQuestions = 20;
+    private double score;
+
     public ToggleGroup[] toggleGroups = new ToggleGroup[20];
-
-
-    
-    //public ToggleGroup q1;
 
     void Start(){
 
@@ -27,14 +30,14 @@ public class Quiz : MonoBehaviour{
         //Pull  quiz from online and store in one giant string
         ContentFromUrl = getFromUrl(URLQuestions);
 
-        /* DEBUG TEXT
+        /* DEBUG
         Debug.Log(ContentFromUrl);
         */
 
         //Split the string into an array based on newline
         QuestionsAndAnswers = ContentFromUrl.Split('\n');
 
-        /* DEBUG TEXT
+        /* DEBUG
         for(int i = 0; i < QuestionsAndAnswers.Length; ++i){
             Debug.Log(i + ":   " + QuestionsAndAnswers[i]);
         }
@@ -44,7 +47,11 @@ public class Quiz : MonoBehaviour{
         ContentFromUrl = getFromUrl(URLAnswerKey);
         
         //Split string into array based on newline
-        AnswerKey = ContentFromUrl.Split('\n');        
+        answerKey = ContentFromUrl.Split('\n');
+        userAnswers = new string[20];
+        correctIncorrect = new bool[20];
+
+
     }
 
     string getFromUrl(string url){
@@ -69,18 +76,62 @@ public class Quiz : MonoBehaviour{
     }
 
 
-    void Submit_Quiz(){
+    public void Submit_Quiz(){
+        correctAnswers = 0;
         //Pull all the answers from the Quiz and store them as A-D in an array called userAnswers
         for(int i = 0; i < toggleGroups.Length; ++i){
             userAnswers[i] = getAnswerFromGroup(toggleGroups[i]);
         }
 
+
+        /* DEBUG
+        for(int i = 0; i < userAnswers.Length; ++i){
+            Debug.Log(userAnswers[i]);
+        }
+        */
+
+
+        for(int i = 0; i < userAnswers.Length; ++i){
+            if(userAnswers[i] == answerKey[i]){
+                correctIncorrect[i] = true;
+                correctAnswers++;
+            }
+        }
+        /* DEBUG
+        for(int i = 0; i < correctIncorrect.Length; ++i){
+             if (correctIncorrect[i]){
+                 Debug.Log(i + ": CORRECT");
+             }else{
+                 Debug.Log(i + ": WRONG");
+             }
+        }
+        */
+
+        score = ((double)correctAnswers / (double)maxQuestions) * 100;
+
+        /* DEBUG
+        Debug.Log("Correct Answers: " + correctAnswers);
+        Debug.Log("Max Questions: " + maxQuestions);
+        Debug.Log("Score: " + score + "%");
+        */
+
+        //Enable score overview
+        scorePanel.SetActive(!scorePanel.activeSelf);
+        
+        scoreText.text = "Score: " + score + "%";
+        correctAnswersText.text = "Correct Answers: " + correctAnswers;
+        questionsText.text = "Questions: " + maxQuestions;
+        
         
     }
 
     string getAnswerFromGroup(ToggleGroup TG){
         Toggle answer = TG.ActiveToggles().FirstOrDefault();
         string letterAnswer = "E";
+
+        if(!TG.AnyTogglesOn()){
+            return letterAnswer;
+        }
 
         switch(answer.name){
             case "Toggle_A":
