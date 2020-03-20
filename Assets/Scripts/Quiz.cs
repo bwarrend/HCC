@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using System.Linq;
+using UnityEngine.Networking;
 
 public class Quiz : MonoBehaviour{
     public string ContentFromUrl;
@@ -18,6 +19,8 @@ public class Quiz : MonoBehaviour{
     public Text correctAnswersText;
     public Text questionsText;
 
+    public GameObject loadingPanel;
+
     private int correctAnswers = 0;
     private const int maxQuestions = 20;
     private double score;
@@ -28,14 +31,13 @@ public class Quiz : MonoBehaviour{
 
 
         //Pull  quiz from online and store in one giant string
-        ContentFromUrl = getFromUrl(URLQuestions);
+        StartCoroutine(getFromURL(URLQuestions));
 
         /* DEBUG
         Debug.Log(ContentFromUrl);
         */
 
-        //Split the string into an array based on newline
-        QuestionsAndAnswers = ContentFromUrl.Split('\n');
+        
 
         /* DEBUG
         for(int i = 0; i < QuestionsAndAnswers.Length; ++i){
@@ -44,16 +46,42 @@ public class Quiz : MonoBehaviour{
         */
 
         //Get answer key and store in one string
-        ContentFromUrl = getFromUrl(URLAnswerKey);
+        StartCoroutine(getFromURL(URLAnswerKey));
         
-        //Split string into array based on newline
-        answerKey = ContentFromUrl.Split('\n');
+
         userAnswers = new string[20];
         correctIncorrect = new bool[20];
 
 
     }
 
+
+
+
+    IEnumerator getFromURL(string url){
+        using (UnityWebRequest webRequest = UnityWebRequest.Get(url)){
+            yield return webRequest.SendWebRequest();
+            
+
+            if(webRequest.isNetworkError){
+                Debug.Log("Badness happened: " + webRequest.error);
+            }else{
+                //Debug.Log("Snagged it!");
+                ContentFromUrl = webRequest.downloadHandler.text;
+
+                if(url == URLQuestions){
+                    QuestionsAndAnswers = ContentFromUrl.Split('\n');
+                    loadingPanel.SetActive(false);
+                }
+                else{
+                    answerKey = ContentFromUrl.Split('\n');
+                }
+            }
+            
+        }
+    }
+
+    /* WWW | deprecated
     string getFromUrl(string url){
         
         #pragma warning disable 0618 //Remove annoying warning
@@ -73,7 +101,7 @@ public class Quiz : MonoBehaviour{
             }
         }
         return www.text;
-    }
+    }*/
 
 
     public void Submit_Quiz(){

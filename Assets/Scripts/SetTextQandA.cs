@@ -9,8 +9,9 @@ public class SetTextQandA : MonoBehaviour
     //public Text thisText;
 
 
-    void Start()
+    void Update()
     {
         this.GetComponent<UnityEngine.UI.Text>().text = Quiz.QuestionsAndAnswers[i];
     }
+
 }
