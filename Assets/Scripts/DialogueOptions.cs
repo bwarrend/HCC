@@ -13,7 +13,7 @@ public class DialogueOptions : Dialogue
     public class Options
     {
         public string buttonName;
-        public Dialogue nextDialogue;
+        public Dialogue nextDialogue;   //next dialogue to be played
         public UnityEvent myEvent;
         
     }

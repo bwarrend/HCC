@@ -8,6 +8,7 @@ public class Dialogue : ScriptableObject
     [System.Serializable]
     public class Info
     {
+        //Dialogue base
         public string name;
         public Sprite portrait;
         [TextArea(3, 10)]

@@ -30,17 +30,16 @@ public class DialogueManager : MonoBehaviour
     public Text dialogueName;
     public Text dialogueText;
     public Image dialoguePortrait;
-    public float delay = 0.0001f;
+    public float delay = 0.0001f;   //how fast text scrolls
     private bool isCurrentlyTyping;
-    private string completeText;
+    private string completeText;    //used for autocompleting text
     public string nextScene;
 
     public Queue<Dialogue.Info> dialogueInfo = new Queue<Dialogue.Info>();
-
-    private bool isDialogueOption;
     public GameObject dialogueOptionUI;
-    private bool inDialogue;
     public GameObject[] optionButtons;
+    private bool isDialogueOption;
+    private bool inDialogue;
     private int optionsAmount;
     public Text questionText;
 
@@ -61,7 +60,7 @@ public class DialogueManager : MonoBehaviour
 
             for (int i = 0; i < optionButtons.Length; i++)
             {
-                optionButtons[i].SetActive(false);
+                optionButtons[i].SetActive(false);  //makes all options buttons inactive at start
             }
             for (int i = 0; i < optionsAmount; i++)
             {
@@ -69,9 +68,9 @@ public class DialogueManager : MonoBehaviour
                 optionButtons[i].transform.GetChild(0).gameObject.GetComponent<Text>().text = dialogueOptions.optionsInfo[i].buttonName;
                 UnityEventHandler myEventHandler = optionButtons[i].GetComponent<UnityEventHandler>();
                 myEventHandler.eventHandler = dialogueOptions.optionsInfo[i].myEvent;
-                if(dialogueOptions.optionsInfo[i] != null)
+                if(dialogueOptions.optionsInfo[i] != null) //checks if there is another dialogue option
                 {
-                    myEventHandler.myDialogue = dialogueOptions.optionsInfo[i].nextDialogue;
+                    myEventHandler.myDialogue = dialogueOptions.optionsInfo[i].nextDialogue;    //queues next dialogue
                 }
                 else
                 {
@@ -91,9 +90,9 @@ public class DialogueManager : MonoBehaviour
         DequeueDialogue();
     }
 
-    public void DequeueDialogue()
+    public void DequeueDialogue()   //shows dialogue
     {
-        if (isCurrentlyTyping == true)
+        if (isCurrentlyTyping == true)  //autocompletes text
         {
             CompleteText();
             StopAllCoroutines();
@@ -164,6 +163,7 @@ public class DialogueManager : MonoBehaviour
     {
         if (isDialogueOption == true)
         {
+            dialogueOptionUI.SetActive(true);
             dialogueOptionUI.SetActive(true);
             
         }

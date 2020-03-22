@@ -16,13 +16,13 @@ public class UnityEventHandler : MonoBehaviour, IPointerDownHandler
         eventHandler.Invoke();
         DialogueManager.instance.CloseOptions();
 
-        if(myDialogue != null)
+        if(myDialogue != null)  //if current dialogue is finished
         {
-            DialogueManager.instance.EnqueueDialogue(myDialogue);
+            DialogueManager.instance.EnqueueDialogue(myDialogue);   //queue next dialogue
         }
         else
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);   //load next scene
         }
     }
 }
