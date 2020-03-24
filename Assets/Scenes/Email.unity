@@ -214,6 +214,18 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 6453411509027616492}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &128578499
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 128578498}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 247927986215173489936d945e1f215d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &128578500
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2149,7 +2161,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 986132924}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 82f8eeb5606bc3a4b9a6d9f65f47d2fd, type: 3}
+  m_Script: {fileID: 11500000, guid: 195c919424bde6c4c85ae82a52c7b6f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &986132927
@@ -2206,17 +2218,6 @@ MonoBehaviour:
           m_StringArgument: Computer
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_MethodName: 
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!114 &986132928
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2259,6 +2260,18 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1692293895}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1079842299
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1079842298}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 247927986215173489936d945e1f215d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &1079842300
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2673,6 +2686,36 @@ PrefabInstance:
       value: 'two@email.com
 
         Haiwai B4nk'
+      objectReference: {fileID: 0}
+    - target: {fileID: 2975071979510092998, guid: b0a349ee649ef0f49a0af9593a575c66,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2975071979510092998, guid: b0a349ee649ef0f49a0af9593a575c66,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2975071979510092998, guid: b0a349ee649ef0f49a0af9593a575c66,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2975071979510092998, guid: b0a349ee649ef0f49a0af9593a575c66,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 2125227739}
+    - target: {fileID: 2975071979510092998, guid: b0a349ee649ef0f49a0af9593a575c66,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: progressedEmailTab2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2975071979510092998, guid: b0a349ee649ef0f49a0af9593a575c66,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 4710359539732354269, guid: b0a349ee649ef0f49a0af9593a575c66,
         type: 3}
@@ -3284,6 +3327,36 @@ PrefabInstance:
 
         Download this'
       objectReference: {fileID: 0}
+    - target: {fileID: 2975071979510092998, guid: b0a349ee649ef0f49a0af9593a575c66,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2975071979510092998, guid: b0a349ee649ef0f49a0af9593a575c66,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2975071979510092998, guid: b0a349ee649ef0f49a0af9593a575c66,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2975071979510092998, guid: b0a349ee649ef0f49a0af9593a575c66,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1879422699}
+    - target: {fileID: 2975071979510092998, guid: b0a349ee649ef0f49a0af9593a575c66,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: progressedEmailTab3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2975071979510092998, guid: b0a349ee649ef0f49a0af9593a575c66,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 4710359539732354269, guid: b0a349ee649ef0f49a0af9593a575c66,
         type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -3539,6 +3612,36 @@ PrefabInstance:
       value: 'four@email.com
 
 '
+      objectReference: {fileID: 0}
+    - target: {fileID: 2975071979510092998, guid: b0a349ee649ef0f49a0af9593a575c66,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2975071979510092998, guid: b0a349ee649ef0f49a0af9593a575c66,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2975071979510092998, guid: b0a349ee649ef0f49a0af9593a575c66,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2975071979510092998, guid: b0a349ee649ef0f49a0af9593a575c66,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1079842299}
+    - target: {fileID: 2975071979510092998, guid: b0a349ee649ef0f49a0af9593a575c66,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: progressedEmailTab4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2975071979510092998, guid: b0a349ee649ef0f49a0af9593a575c66,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 4710359539732354269, guid: b0a349ee649ef0f49a0af9593a575c66,
         type: 3}
@@ -4137,6 +4240,18 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1688119663}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1879422699
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1879422698}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 247927986215173489936d945e1f215d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &1879422700
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5275,6 +5390,18 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1308802394}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2125227739
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2125227738}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 247927986215173489936d945e1f215d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &2125227740
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5302,6 +5429,36 @@ PrefabInstance:
       value: 'First Email
 
 '
+      objectReference: {fileID: 0}
+    - target: {fileID: 2975071979510092998, guid: b0a349ee649ef0f49a0af9593a575c66,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2975071979510092998, guid: b0a349ee649ef0f49a0af9593a575c66,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2975071979510092998, guid: b0a349ee649ef0f49a0af9593a575c66,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2975071979510092998, guid: b0a349ee649ef0f49a0af9593a575c66,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 128578499}
+    - target: {fileID: 2975071979510092998, guid: b0a349ee649ef0f49a0af9593a575c66,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: progressedEmailTab5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2975071979510092998, guid: b0a349ee649ef0f49a0af9593a575c66,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 4710359539732354269, guid: b0a349ee649ef0f49a0af9593a575c66,
         type: 3}

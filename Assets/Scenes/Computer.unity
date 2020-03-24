@@ -132,6 +132,7 @@ GameObject:
   - component: {fileID: 79434794}
   - component: {fileID: 79434793}
   - component: {fileID: 79434792}
+  - component: {fileID: 79434796}
   - component: {fileID: 79434795}
   m_Layer: 5
   m_Name: Button_Internet
@@ -202,6 +203,17 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 79434796}
+        m_MethodName: progressedInternetTab1
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 79434795}
         m_MethodName: GoToScene
         m_Mode: 5
@@ -258,7 +270,19 @@ MonoBehaviour:
   m_GameObject: {fileID: 79434790}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 82f8eeb5606bc3a4b9a6d9f65f47d2fd, type: 3}
+  m_Script: {fileID: 11500000, guid: 195c919424bde6c4c85ae82a52c7b6f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &79434796
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 79434790}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 247927986215173489936d945e1f215d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &167508012
@@ -685,6 +709,7 @@ GameObject:
   - component: {fileID: 392960313}
   - component: {fileID: 392960312}
   - component: {fileID: 392960311}
+  - component: {fileID: 392960314}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -757,6 +782,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &392960314
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 392960310}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 19953a4c6d25f45458bbcafa56951912, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &487296979
 GameObject:
   m_ObjectHideFlags: 0
@@ -1015,6 +1052,7 @@ GameObject:
   - component: {fileID: 691296786}
   - component: {fileID: 691296785}
   - component: {fileID: 691296784}
+  - component: {fileID: 691296788}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -1110,6 +1148,19 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &691296788
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 691296783}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c903db1b3a579e4188a151eddf9328e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  QuizButton: {fileID: 1203628854}
 --- !u!1 &836138652
 GameObject:
   m_ObjectHideFlags: 0
@@ -1345,7 +1396,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1203628855
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1572,6 +1623,7 @@ GameObject:
   - component: {fileID: 1555351922}
   - component: {fileID: 1555351921}
   - component: {fileID: 1555351920}
+  - component: {fileID: 1555351924}
   m_Layer: 5
   m_Name: Button_Wifi
   m_TagString: Untagged
@@ -1665,6 +1717,17 @@ MonoBehaviour:
           m_StringArgument: Internet
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1555351924}
+        m_MethodName: clearPlayerProgress
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1555351922
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1701,6 +1764,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1555351918}
   m_CullTransparentMesh: 0
+--- !u!114 &1555351924
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1555351918}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 247927986215173489936d945e1f215d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1599428088
 GameObject:
   m_ObjectHideFlags: 0
@@ -1714,6 +1789,7 @@ GameObject:
   - component: {fileID: 1599428091}
   - component: {fileID: 1599428090}
   - component: {fileID: 1599428093}
+  - component: {fileID: 1599428094}
   m_Layer: 5
   m_Name: Button_Email
   m_TagString: Untagged
@@ -1783,6 +1859,17 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 1599428094}
+        m_MethodName: progressedEmailTab1
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Email
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 1599428093}
         m_MethodName: GoToScene
         m_Mode: 5
@@ -1840,6 +1927,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 195c919424bde6c4c85ae82a52c7b6f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1599428094
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1599428088}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 247927986215173489936d945e1f215d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1918733447
