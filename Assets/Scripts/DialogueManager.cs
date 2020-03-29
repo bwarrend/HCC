@@ -7,11 +7,12 @@ using UnityEngine.SceneManagement;
 
 public class DialogueManager : MonoBehaviour
 {
-    
+    public Set_Player_Progress spp;
     public static DialogueManager instance;
     private void Awake()
     {
-
+        
+        spp.clearPlayerProgress();
         if (instance != null)
         {
             //Debug.LogWarning("fix this " + gameObject.name);

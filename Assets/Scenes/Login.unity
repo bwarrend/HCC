@@ -298,7 +298,6 @@ GameObject:
   - component: {fileID: 379093785}
   - component: {fileID: 379093784}
   - component: {fileID: 379093783}
-  - component: {fileID: 379093786}
   m_Layer: 5
   m_Name: SubmitButton
   m_TagString: Untagged
@@ -369,17 +368,6 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 379093786}
-        m_MethodName: clearPlayerProgress
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: Computer
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 392960314}
         m_MethodName: ChangeScene
         m_Mode: 5
@@ -427,18 +415,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 379093781}
   m_CullTransparentMesh: 0
---- !u!114 &379093786
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 379093781}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 247927986215173489936d945e1f215d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &392960310
 GameObject:
   m_ObjectHideFlags: 0
@@ -451,6 +427,7 @@ GameObject:
   - component: {fileID: 392960312}
   - component: {fileID: 392960311}
   - component: {fileID: 392960314}
+  - component: {fileID: 392960315}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -536,6 +513,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inputText: {fileID: 0}
+--- !u!114 &392960315
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 392960310}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 247927986215173489936d945e1f215d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &462535828
 GameObject:
   m_ObjectHideFlags: 0
@@ -1809,6 +1798,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3614a6ee362fe9b46b3aba61a774934e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spp: {fileID: 392960315}
   dialogueBox: {fileID: 234944831}
   dialogueName: {fileID: 1054922094}
   dialogueText: {fileID: 81726174}
@@ -2689,5 +2679,15 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 3302369727101742918, guid: 6b43a3d9271f5a942bc54fdd942e4981,
+        type: 3}
+      propertyPath: dialogueBox
+      value: 
+      objectReference: {fileID: 392960310}
+    - target: {fileID: 3302369727101742918, guid: 6b43a3d9271f5a942bc54fdd942e4981,
+        type: 3}
+      propertyPath: spp
+      value: 
+      objectReference: {fileID: 392960315}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6b43a3d9271f5a942bc54fdd942e4981, type: 3}
