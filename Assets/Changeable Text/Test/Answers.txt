@@ -9,12 +9,12 @@ D
 D
 A
 A
-B
-C
 C
 B
-C
-A
 C
 D
+C
 A
+A
+C
+B
