@@ -18,41 +18,41 @@ True
 False
 
 
-Question5
-wrong
-wrong
-wrong
-right
-Question6
-wrong
-wrong
-right
-wrong
-Question7
-wrong
-wrong
-wrong
-right
-Question8
-right
-wrong
-wrong
-wrong
-Question9
-right
-wrong
-wrong
-wrong
-Question10
-wrong
-right
-wrong
-wrong
-Question11
-right
-wrong
-wrong
-wrong
+A defensie technology designed to keep hackers out is called?
+Defenseware
+Firewall
+Software
+Fence
+What term describes all forms of malicious software designed to wreak havoc on a computer?
+Worms
+Virus
+Malware
+Trojan horse
+____ aim(s) to orrupt, ease or modify information on a user's computer before spreading it to others. 
+Worms
+Viruses
+Malware
+Trojan horse
+What is a malware that allows hacker to gain remote access to a computer?
+Worms
+Virus
+Malware
+Trojan horse
+What shouldnt you include in an email?
+Office number
+Location
+Name
+Passwords
+What can repliate itself in order to spread infection to other computer in the network?
+Worms
+Virus
+Malware
+Trojan horse
+_____ is a way to add a second layer to veryfying ones account?
+Dual authentication
+key Data
+Password
+Pin
 Question12
 wrong
 right
