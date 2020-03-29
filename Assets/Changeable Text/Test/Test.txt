@@ -1,23 +1,23 @@
-Question1
-wrong
-right
-wrong
-wrong
-Question2
-right
-wrong
-wrong
-wrong
-Question3
-wrong
-wrong
-right
-wrong
-Question4
-wrong
-right
-wrong
-wrong
+What does the 's' in HTTPS mean?
+Safe  
+Secure
+Shielded
+Sheltered
+_______ is a type of malicious software cyber actors use tod eny access to a system's data
+Malware
+Trojan
+Worm
+Ransomware
+Which password is most secure?
+Baby$hark123
+Password123
+Sur#jTfGrfy!09
+Meh
+Is it more secure to have unique passwords for each site you visit?
+True
+False
+
+
 Question5
 wrong
 wrong
