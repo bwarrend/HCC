@@ -53,48 +53,46 @@ Dual authentication
 key Data
 Password
 Pin
-Question12
-wrong
-right
-wrong
-wrong
-Question13
-wrong
-wrong
-right
-wrong
-Question14
-wrong
-wrong
-right
-wrong
-Question15
-wrong
-right
-wrong
-wrong
-Question16
-wrong
-wrong
-right
-wrong
-Question17
-right
-wrong
-wrong
-wrong
-Question18
-wrong
-wrong
-right
-wrong
-Question19
-wrong
-wrong
-wrong
-right
-Question20
-right
-wrong
-wrong
-wrong
+____ occurs when someone obtains key pieces of your personal information and impersonates you.
+Theft
+Cloning
+Identity theft
+Identity
+What is a fraudulent attempt to obtain sensitive information such as passwords and log-ins by disguising them as someone who has authority
+Fishing
+Phishing
+Scooping
+Imposter
+What are safe E-mail habits?
+click on random links in E-mails
+send out sensitive information through email
+log out when you are done using your email
+follow instructions from unknown sources
+How do you protect yourself from malware?
+Get anti-virus
+Update computer software
+Secure passwords
+All of the above
+What is your best defense against the consequences of ransomware
+Save data to desktop
+E-mail data to co-workers
+Back data up
+E-mail data to yourself
+Scareware is a scam by hackers to attempt to gain access to your computer.
+True
+False
+
+
+Adware is unwanted software designed to throw advertisments up on your screens.
+True
+False
+
+
+A lock symbol on your browser signifies?
+Screen lock
+Unencrypted
+Encrypted
+Nothing
+It's safe to assume that everything over the internet is secure.
+True 
+False
