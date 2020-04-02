@@ -8,5 +8,6 @@ public class ChangeScene : MonoBehaviour
     public void GoToScene(string sceneName)
     {
         SceneManager.LoadScene(sceneName);
+        //testpush
     }
 }
