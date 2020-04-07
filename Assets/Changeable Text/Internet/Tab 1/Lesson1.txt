@@ -1,8 +1,9 @@
-•	Http stands for Hypertext Transfer Protocol and it is the most widely used protocol for
-   data transfer over the internet.
+•	HTTP stands for Hypertext Transfer Protocol and it is the most widely used protocol for
+	data transfer over the internet.
 •	Before making any online purchases make sure you are using Https.
-•	Https stands for Hypertext Transfer Protocol Secured 
-•	Https transmits its data security using encrypted connection.
+•	The 's' in HTTPS stands for Hypertext Transfer Protocol Secured 
+•	HTTPS transmits its data security using encrypted connection.
+•	Look for the lock symbol showed below
 
 
 

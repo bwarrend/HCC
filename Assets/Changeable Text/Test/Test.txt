@@ -3,7 +3,7 @@ Safe
 Secure
 Shielded
 Sheltered
-2. _______ is a type of malicious software cyber actors use tod eny access to a system's data
+2. _______ is a type of malicious software cyber actors use to deny access to a system's data
 Malware
 Trojan
 Worm
