@@ -14,12 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueInfo:
   - name: Acai Bowl Hacker
-    portrait: {fileID: 21300000, guid: 8563a971a51fb3c4d849c3ca287f1eea, type: 3}
+    portrait: {fileID: 21300000, guid: ab93ddeab0338574e9ebd951e99254d5, type: 3}
     myText: Try again... There's a better option.
     url: https://raw.githubusercontent.com/bwarrend/HCC/master/Assets/Changeable%20Text/LoginD/first.txt
   questionText: Which of these has the best password option?
   optionsInfo:
-  - buttonName: password
+  - buttonName: coconut
     nextDialogue: {fileID: 11400000}
     myEvent:
       m_PersistentCalls:
@@ -35,7 +35,7 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-  - buttonName: qwerty
+  - buttonName: password
     nextDialogue: {fileID: 11400000}
     myEvent:
       m_PersistentCalls:
@@ -51,7 +51,7 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-  - buttonName: 12345
+  - buttonName: locomoco
     nextDialogue: {fileID: 11400000}
     myEvent:
       m_PersistentCalls:
@@ -67,7 +67,7 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-  - buttonName: PassWord123
+  - buttonName: HawaiiCyberChallenge
     nextDialogue: {fileID: 11400000, guid: 5aaba24036aa0e14dad71e0dae8a6e5b, type: 2}
     myEvent:
       m_PersistentCalls:

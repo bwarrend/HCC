@@ -14,18 +14,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueInfo:
   - name: Acai Bowl Hacker
-    portrait: {fileID: 21300000, guid: 8563a971a51fb3c4d849c3ca287f1eea, type: 3}
-    myText: Nice! It is recommended that a good password have at least one uppercase
-      letter and a number.
+    portrait: {fileID: 21300000, guid: f9024205c31b7d9429fae40c4c09d193, type: 3}
+    myText: Correct! Using a phase that's easy to remember while using uppercase letters
+      is a good pathway to better Internet safety.
     url: https://raw.githubusercontent.com/bwarrend/HCC/master/Assets/Changeable%20Text/LoginD/first.txt
   - name: Acai Bowl Hacker
-    portrait: {fileID: 21300000, guid: 8563a971a51fb3c4d849c3ca287f1eea, type: 3}
-    myText: Special characters such as an explamation mark (!) make passwords even
-      stronger.
+    portrait: {fileID: 21300000, guid: 5bba768bc9a392f49991f9ebaadba477, type: 3}
+    myText: In addition to this, special characters such as an explamation mark (!)
+      make passwords even stronger.
     url: https://raw.githubusercontent.com/bwarrend/HCC/master/Assets/Changeable%20Text/LoginD/first.txt
-  questionText: How about now?
+  questionText: Which has the strongest password option?
   optionsInfo:
-  - buttonName: Password
+  - buttonName: WaikikiBeach
     nextDialogue: {fileID: 11400000, guid: 3bd0cd57b1739c5409951c96e1b77d9b, type: 2}
     myEvent:
       m_PersistentCalls:
@@ -41,7 +41,7 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-  - buttonName: PassWord123!
+  - buttonName: SpamMusubi4Life!
     nextDialogue: {fileID: 11400000, guid: 4fc471ba3ad77a34d9d7aa4a9ce12228, type: 2}
     myEvent:
       m_PersistentCalls:
@@ -73,7 +73,7 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-  - buttonName: password123
+  - buttonName: UkeleleCalm2
     nextDialogue: {fileID: 11400000, guid: 3bd0cd57b1739c5409951c96e1b77d9b, type: 2}
     myEvent:
       m_PersistentCalls:

@@ -12,8 +12,32 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a68ce0579b44514e8476e313af98fbe, type: 3}
   m_Name: Dialogue3
   m_EditorClassIdentifier: 
-  dialogueInfo: []
-  questionText: Cool!
+  dialogueInfo:
+  - name: Acai Bowl Buddy
+    portrait: {fileID: 21300000, guid: f9024205c31b7d9429fae40c4c09d193, type: 3}
+    myText: Good job! I think we're ready to try the real thing now.
+    url: 
+  - name: Acai Bowl Buddy
+    portrait: {fileID: 21300000, guid: 901bf0f8686e36448b65a67a047de5f4, type: 3}
+    myText: And that is, fixing this virtual computer.
+    url: 
+  - name: Acai Bowl Buddy
+    portrait: {fileID: 21300000, guid: ab93ddeab0338574e9ebd951e99254d5, type: 3}
+    myText: You see, I let my cousin, AcaiBowl Hacker "borrow" my computer for a bit.
+    url: 
+  - name: Acai Bowl Buddy
+    portrait: {fileID: 21300000, guid: 901bf0f8686e36448b65a67a047de5f4, type: 3}
+    myText: When I got it back, some things have been acting strange on this computer.
+    url: 
+  - name: Acai Bowl Buddy
+    portrait: {fileID: 21300000, guid: 901bf0f8686e36448b65a67a047de5f4, type: 3}
+    myText: Please, it's up to you to fix it...
+    url: 
+  - name: Acai Bowl Buddy
+    portrait: {fileID: 21300000, guid: f9024205c31b7d9429fae40c4c09d193, type: 3}
+    myText: After all, I think you're more than ready...
+    url: 
+  questionText: 
   optionsInfo:
   - buttonName: Continue
     nextDialogue: {fileID: 0}
