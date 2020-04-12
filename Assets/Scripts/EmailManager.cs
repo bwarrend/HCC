@@ -38,10 +38,4 @@ public class EmailManager : MonoBehaviour
     {
         item.SetActive(false);
     }
-
-    //public void DeleteEmail(EmailObject email)
-    //{
-    //    emailObjects.Remove(email);
-    //    Destroy(email.gameObject);
-    //}
 }

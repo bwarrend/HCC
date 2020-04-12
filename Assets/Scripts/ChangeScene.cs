@@ -7,7 +7,7 @@ public class ChangeScene : MonoBehaviour
 {
     public void GoToScene(string sceneName)
     {
-        SceneManager.LoadScene(sceneName);
+        Application.LoadLevel(sceneName);
         //testpush
     }
 }
