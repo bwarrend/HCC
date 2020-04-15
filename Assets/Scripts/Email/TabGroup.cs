@@ -54,7 +54,7 @@ public class TabGroup : MonoBehaviour
             }
         }
     }
-    public void ResetTabs()
+    public void ResetTabs() //sets all tabs to idle
     {
         foreach(TabButton button in tabButtons)
         {
