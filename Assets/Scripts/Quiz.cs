@@ -25,10 +25,24 @@ public class Quiz : MonoBehaviour{
     private const int maxQuestions = 20;
     private double score;
 
+    public Text afterQuizMemo;
+    public GameObject GoToCertificate;
+    public GameObject cert_Memo;
+    public GameObject InField;
+    public InputField InputField_PlayerName;
+
+    private string PlayerName;
+    public Text Text_PlayerName;
+    public GameObject Certificate;
+
     public ToggleGroup[] toggleGroups = new ToggleGroup[20];
 
     void Start(){
 
+        GoToCertificate.SetActive(false);
+        cert_Memo.SetActive(false);
+        InField.SetActive(false);
+        Certificate.SetActive(false);
 
         //Pull  quiz from online and store in one giant string
         StartCoroutine(getFromURL(URLQuestions));
@@ -46,8 +60,7 @@ public class Quiz : MonoBehaviour{
         */
 
         //Get answer key and store in one string
-        StartCoroutine(getFromURL(URLAnswerKey));
-        
+        StartCoroutine(getFromURL(URLAnswerKey));        
 
         userAnswers = new string[20];
         correctIncorrect = new bool[20];
@@ -149,8 +162,23 @@ public class Quiz : MonoBehaviour{
         scoreText.text = "Score: " + score + "%";
         correctAnswersText.text = "Correct Answers: " + correctAnswers;
         questionsText.text = "Questions: " + maxQuestions;
-        
-        
+
+        if(score >= 95){
+            
+            afterQuizMemo.text = "Excellent job!\n Please Enter your name...";
+            GoToCertificate.SetActive(true);
+            cert_Memo.SetActive(true);
+            InField.SetActive(true);
+            PlayerName = InputField_PlayerName.text;
+            
+        }else{
+            afterQuizMemo.text = "Nice try but you'll need to do better to get that certificate.\n"
+                                    + "Press the X and try again.";
+            GoToCertificate.SetActive(false);
+            cert_Memo.SetActive(false);
+            InField.SetActive(false);
+            
+        }        
     }
 
     string getAnswerFromGroup(ToggleGroup TG){
@@ -181,32 +209,9 @@ public class Quiz : MonoBehaviour{
         return letterAnswer;
     }
 
-
-
-    /*
-
-     * 
-     * X-I want to make a public string array here.
-     * X-Then pull the questions/answers .txt from website
-     * X-Split it into the array based on '\n' escape character
-     * X-Set the text of the questions/answers based on string
-     *      -TestContent[0] = First question
-     *      -TestContent[1] = Question 1 answer 1
-     *      -TestContent[2] = Question 1 answer 2
-     *      -etc.
-     * x-Pull answer key to answers[] array
-     * -Make boolean array for questions right and wrong, set all to false
-     * -Once submit button is pressed, check each answer based on the toggle group
-     *      -ToggleGroup Question_1;
-     *      - if(Question_1.AnyTogglesOn()){
-     *              Toggle answer = Question_1.ActiveToggles()???
-     *              
-     *              if (answer == answers[the questions]){
-     *                     correct[the question] = true;
-     *              }
-     *         }
-     *  
-     *  -Show score and then maybe display incorrect questions here
-     */ 
-
+    public void showCertificate(){
+        PlayerName = InputField_PlayerName.text;
+        Certificate.SetActive(true);
+        Text_PlayerName.text = PlayerName;
+    }
 }

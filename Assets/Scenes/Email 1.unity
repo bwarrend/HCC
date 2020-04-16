@@ -697,6 +697,16 @@ PrefabInstance:
       propertyPath: m_Text
       value: Button 5
       objectReference: {fileID: 0}
+    - target: {fileID: 4082533187394909239, guid: 23b2353aa99c13c48a0348ca9f7053d1,
+        type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 4082533187394909239, guid: 23b2353aa99c13c48a0348ca9f7053d1,
+        type: 3}
+      propertyPath: m_FontData.m_MinSize
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 4082533186939327605, guid: 23b2353aa99c13c48a0348ca9f7053d1, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 23b2353aa99c13c48a0348ca9f7053d1, type: 3}
@@ -1155,6 +1165,16 @@ PrefabInstance:
       propertyPath: m_Text
       value: Button 2
       objectReference: {fileID: 0}
+    - target: {fileID: 4082533187394909239, guid: 23b2353aa99c13c48a0348ca9f7053d1,
+        type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 4082533187394909239, guid: 23b2353aa99c13c48a0348ca9f7053d1,
+        type: 3}
+      propertyPath: m_FontData.m_MinSize
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 0}
     - {fileID: 4082533186939327605, guid: 23b2353aa99c13c48a0348ca9f7053d1, type: 3}
@@ -1207,10 +1227,33 @@ MonoBehaviour:
   background: {fileID: 0}
   onTabSelected:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 178827400}
+        m_MethodName: progressedEmailTab2
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   onTabDeselected:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &178827400
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 178827395}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 247927986215173489936d945e1f215d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &210022512
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1934,6 +1977,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Text
       value: Button 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4082533187394909239, guid: 23b2353aa99c13c48a0348ca9f7053d1,
+        type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 4082533187394909239, guid: 23b2353aa99c13c48a0348ca9f7053d1,
+        type: 3}
+      propertyPath: m_FontData.m_MinSize
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 4082533186939327605, guid: 23b2353aa99c13c48a0348ca9f7053d1, type: 3}
@@ -3651,10 +3704,33 @@ MonoBehaviour:
   background: {fileID: 0}
   onTabSelected:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 683723683}
+        m_MethodName: progressedEmailTab3
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   onTabDeselected:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &683723683
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 683723678}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 247927986215173489936d945e1f215d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &691296783
 GameObject:
   m_ObjectHideFlags: 0
@@ -7136,10 +7212,33 @@ MonoBehaviour:
   background: {fileID: 0}
   onTabSelected:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1866719165}
+        m_MethodName: progressedEmailTab5
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   onTabDeselected:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &1866719165
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1866719160}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 247927986215173489936d945e1f215d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1869039389
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7337,6 +7436,16 @@ PrefabInstance:
       propertyPath: m_Text
       value: Button 4
       objectReference: {fileID: 0}
+    - target: {fileID: 4082533187394909239, guid: 23b2353aa99c13c48a0348ca9f7053d1,
+        type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 4082533187394909239, guid: 23b2353aa99c13c48a0348ca9f7053d1,
+        type: 3}
+      propertyPath: m_FontData.m_MinSize
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 4082533186939327605, guid: 23b2353aa99c13c48a0348ca9f7053d1, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 23b2353aa99c13c48a0348ca9f7053d1, type: 3}
@@ -7388,10 +7497,33 @@ MonoBehaviour:
   background: {fileID: 0}
   onTabSelected:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1869039396}
+        m_MethodName: progressedEmailTab4
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   onTabDeselected:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &1869039396
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1869039391}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 247927986215173489936d945e1f215d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &1908294784 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4082533187394909239, guid: 23b2353aa99c13c48a0348ca9f7053d1,
@@ -8481,8 +8613,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -260.43, y: 5.649491}
-  m_SizeDelta: {x: 34.57, y: 11.299}
+  m_AnchoredPosition: {x: -263.7, y: 5.6495}
+  m_SizeDelta: {x: 65.58, y: 17.614}
   m_Pivot: {x: 0.50000036, y: 0.5}
 --- !u!114 &2088222967
 MonoBehaviour:
@@ -8890,6 +9022,16 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4082533187394909239, guid: 23b2353aa99c13c48a0348ca9f7053d1,
+        type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 4082533187394909239, guid: 23b2353aa99c13c48a0348ca9f7053d1,
+        type: 3}
+      propertyPath: m_FontData.m_MinSize
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 4082533186939327605, guid: 23b2353aa99c13c48a0348ca9f7053d1, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 23b2353aa99c13c48a0348ca9f7053d1, type: 3}
@@ -8953,9 +9095,32 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 2120308934}
+        m_MethodName: progressedEmailTab1
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   onTabDeselected:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &2120308934
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2120308929}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 247927986215173489936d945e1f215d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2124017248
 GameObject:
   m_ObjectHideFlags: 0
