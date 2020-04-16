@@ -23403,6 +23403,7 @@ MonoBehaviour:
   InputField_PlayerName: {fileID: 1909884781}
   Text_PlayerName: {fileID: 1370314230}
   Certificate: {fileID: 1615251740}
+  Text_SecretCode: {fileID: 1550308242}
   toggleGroups:
   - {fileID: 1384104132}
   - {fileID: 1108966255}

@@ -5,6 +5,7 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using System.Linq;
 using UnityEngine.Networking;
+using System;
 
 public class Quiz : MonoBehaviour{
     public string ContentFromUrl;
@@ -34,6 +35,7 @@ public class Quiz : MonoBehaviour{
     private string PlayerName;
     public Text Text_PlayerName;
     public GameObject Certificate;
+    public Text Text_SecretCode;
 
     public ToggleGroup[] toggleGroups = new ToggleGroup[20];
 
@@ -163,7 +165,7 @@ public class Quiz : MonoBehaviour{
         correctAnswersText.text = "Correct Answers: " + correctAnswers;
         questionsText.text = "Questions: " + maxQuestions;
 
-        if(score >= 95){
+        if(score >= 5){
             
             afterQuizMemo.text = "Excellent job!\n Please Enter your name...";
             GoToCertificate.SetActive(true);
@@ -213,5 +215,13 @@ public class Quiz : MonoBehaviour{
         PlayerName = InputField_PlayerName.text;
         Certificate.SetActive(true);
         Text_PlayerName.text = PlayerName;
+        Text_SecretCode.text = "Secret Code: " + getSecretCode();
+
+        getSecretCode();
+    }
+
+    int getSecretCode(){
+        string secretCode = "C4b3rRu135!" + this.PlayerName;
+        return Math.Abs(secretCode.GetHashCode());        
     }
 }
