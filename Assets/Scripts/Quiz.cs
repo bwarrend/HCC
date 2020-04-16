@@ -165,7 +165,7 @@ public class Quiz : MonoBehaviour{
         correctAnswersText.text = "Correct Answers: " + correctAnswers;
         questionsText.text = "Questions: " + maxQuestions;
 
-        if(score >= 5){
+        if(score >= 95){
             
             afterQuizMemo.text = "Excellent job!\n Please Enter your name...";
             GoToCertificate.SetActive(true);
