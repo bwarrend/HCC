@@ -941,7 +941,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 491841998}
   m_HandleRect: {fileID: 491841997}
   m_Direction: 0
-  m_Value: 1
+  m_Value: 0
   m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -1239,6 +1239,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 178827400}
+        m_MethodName: progressedEmailTab1
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   onTabDeselected:
     m_PersistentCalls:
       m_Calls: []
@@ -1254,7 +1265,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 247927986215173489936d945e1f215d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prog: {fileID: 0}
 --- !u!1001 &210022512
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3732,7 +3742,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 247927986215173489936d945e1f215d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prog: {fileID: 0}
 --- !u!1 &691296783
 GameObject:
   m_ObjectHideFlags: 0
@@ -6451,7 +6460,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 646481838}
   m_HandleRect: {fileID: 646481837}
   m_Direction: 0
-  m_Value: 1
+  m_Value: 0
   m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -7241,7 +7250,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 247927986215173489936d945e1f215d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prog: {fileID: 0}
 --- !u!1001 &1869039389
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7527,7 +7535,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 247927986215173489936d945e1f215d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prog: {fileID: 0}
 --- !u!114 &1908294784 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4082533187394909239, guid: 23b2353aa99c13c48a0348ca9f7053d1,
@@ -8541,8 +8548,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 4202532}
   m_HandleRect: {fileID: 4202531}
   m_Direction: 2
-  m_Value: 0.9999999
-  m_Size: 0.5641666
+  m_Value: 1.0000001
+  m_Size: 0.56416667
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -9125,7 +9132,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 247927986215173489936d945e1f215d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prog: {fileID: 0}
 --- !u!1 &2124017248
 GameObject:
   m_ObjectHideFlags: 0
@@ -9811,7 +9817,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 247927986215173489936d945e1f215d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prog: {fileID: 0}
 --- !u!224 &4142176682998843287
 RectTransform:
   m_ObjectHideFlags: 0
@@ -10508,7 +10513,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 247927986215173489936d945e1f215d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prog: {fileID: 0}
 --- !u!1 &7973513517259759881
 GameObject:
   m_ObjectHideFlags: 0
@@ -10540,7 +10544,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 247927986215173489936d945e1f215d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prog: {fileID: 0}
 --- !u!1 &7973513517263999841
 GameObject:
   m_ObjectHideFlags: 0
@@ -10572,7 +10575,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 247927986215173489936d945e1f215d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prog: {fileID: 0}
 --- !u!1 &7973513517394924219
 GameObject:
   m_ObjectHideFlags: 0
@@ -10604,4 +10606,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 247927986215173489936d945e1f215d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prog: {fileID: 0}
