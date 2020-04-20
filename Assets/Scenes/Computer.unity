@@ -132,8 +132,8 @@ GameObject:
   - component: {fileID: 79434794}
   - component: {fileID: 79434793}
   - component: {fileID: 79434792}
-  - component: {fileID: 79434796}
   - component: {fileID: 79434795}
+  - component: {fileID: 79434796}
   m_Layer: 5
   m_Name: Button_Internet
   m_TagString: Untagged
@@ -203,7 +203,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 79434796}
+      - m_Target: {fileID: 0}
         m_MethodName: progressedInternetTab1
         m_Mode: 1
         m_Arguments:
@@ -285,6 +285,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 247927986215173489936d945e1f215d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  prog: {fileID: 609934739}
 --- !u!1 &167508012
 GameObject:
   m_ObjectHideFlags: 0
@@ -893,13 +894,14 @@ GameObject:
   - component: {fileID: 609934738}
   - component: {fileID: 609934740}
   - component: {fileID: 609934739}
+  - component: {fileID: 609934741}
   m_Layer: 5
   m_Name: Progress Bar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &609934738
 RectTransform:
   m_ObjectHideFlags: 0
@@ -984,6 +986,18 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &609934741
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 609934737}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c394a5b236e438f43bd9e10ba84b5acc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &621281182
 GameObject:
   m_ObjectHideFlags: 0
@@ -1799,7 +1813,6 @@ GameObject:
   - component: {fileID: 1555351922}
   - component: {fileID: 1555351921}
   - component: {fileID: 1555351920}
-  - component: {fileID: 1555351924}
   m_Layer: 5
   m_Name: Button_Wifi
   m_TagString: Untagged
@@ -1929,18 +1942,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1555351918}
   m_CullTransparentMesh: 0
---- !u!114 &1555351924
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1555351918}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 247927986215173489936d945e1f215d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1599428088
 GameObject:
   m_ObjectHideFlags: 0
@@ -2024,7 +2025,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1599428094}
+      - m_Target: {fileID: 0}
         m_MethodName: progressedEmailTab1
         m_Mode: 1
         m_Arguments:
@@ -2106,6 +2107,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 247927986215173489936d945e1f215d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  prog: {fileID: 609934739}
 --- !u!1 &1831023274
 GameObject:
   m_ObjectHideFlags: 0
@@ -2263,7 +2265,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 10, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}

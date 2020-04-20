@@ -941,7 +941,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 491841998}
   m_HandleRect: {fileID: 491841997}
   m_Direction: 0
-  m_Value: 0
+  m_Value: 1
   m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -1254,6 +1254,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 247927986215173489936d945e1f215d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  prog: {fileID: 0}
 --- !u!1001 &210022512
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3731,6 +3732,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 247927986215173489936d945e1f215d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  prog: {fileID: 0}
 --- !u!1 &691296783
 GameObject:
   m_ObjectHideFlags: 0
@@ -6449,7 +6451,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 646481838}
   m_HandleRect: {fileID: 646481837}
   m_Direction: 0
-  m_Value: 0
+  m_Value: 1
   m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -7239,6 +7241,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 247927986215173489936d945e1f215d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  prog: {fileID: 0}
 --- !u!1001 &1869039389
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7524,6 +7527,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 247927986215173489936d945e1f215d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  prog: {fileID: 0}
 --- !u!114 &1908294784 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4082533187394909239, guid: 23b2353aa99c13c48a0348ca9f7053d1,
@@ -8537,8 +8541,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 4202532}
   m_HandleRect: {fileID: 4202531}
   m_Direction: 2
-  m_Value: 1.0000001
-  m_Size: 0.56416667
+  m_Value: 0.9999999
+  m_Size: 0.5641666
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -9121,6 +9125,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 247927986215173489936d945e1f215d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  prog: {fileID: 0}
 --- !u!1 &2124017248
 GameObject:
   m_ObjectHideFlags: 0
@@ -9786,6 +9791,7 @@ GameObject:
   - component: {fileID: 4142176682998843287}
   - component: {fileID: 6455871693682154171}
   - component: {fileID: 4473088650656318003}
+  - component: {fileID: 3974571666659851915}
   m_Layer: 5
   m_Name: Tab_Email (5)
   m_TagString: Untagged
@@ -9793,6 +9799,19 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &3974571666659851915
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3974571666659851914}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 247927986215173489936d945e1f215d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prog: {fileID: 0}
 --- !u!224 &4142176682998843287
 RectTransform:
   m_ObjectHideFlags: 0
@@ -10469,6 +10488,7 @@ GameObject:
   - component: {fileID: 6986464198105353249}
   - component: {fileID: 6969301402390797}
   - component: {fileID: 7465989610392455557}
+  - component: {fileID: 7973513516631405885}
   m_Layer: 5
   m_Name: Tab_Email (2)
   m_TagString: Untagged
@@ -10476,6 +10496,19 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &7973513516631405885
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7973513516631405884}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 247927986215173489936d945e1f215d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prog: {fileID: 0}
 --- !u!1 &7973513517259759881
 GameObject:
   m_ObjectHideFlags: 0
@@ -10487,6 +10520,7 @@ GameObject:
   - component: {fileID: 6986464198550214676}
   - component: {fileID: 6969300706395448}
   - component: {fileID: 7465989611105230256}
+  - component: {fileID: 7973513517259759882}
   m_Layer: 5
   m_Name: Tab_Email (3)
   m_TagString: Untagged
@@ -10494,6 +10528,19 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &7973513517259759882
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7973513517259759881}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 247927986215173489936d945e1f215d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prog: {fileID: 0}
 --- !u!1 &7973513517263999841
 GameObject:
   m_ObjectHideFlags: 0
@@ -10505,6 +10552,7 @@ GameObject:
   - component: {fileID: 6986464198554364540}
   - component: {fileID: 6969300702263120}
   - component: {fileID: 7465989611109478360}
+  - component: {fileID: 7973513517263999842}
   m_Layer: 5
   m_Name: Tab_Email (4)
   m_TagString: Untagged
@@ -10512,6 +10560,19 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &7973513517263999842
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7973513517263999841}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 247927986215173489936d945e1f215d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prog: {fileID: 0}
 --- !u!1 &7973513517394924219
 GameObject:
   m_ObjectHideFlags: 0
@@ -10523,6 +10584,7 @@ GameObject:
   - component: {fileID: 6986464198415051686}
   - component: {fileID: 6969301108176522}
   - component: {fileID: 7465989611240402434}
+  - component: {fileID: 7973513517394924220}
   m_Layer: 5
   m_Name: Tab_Email (1)
   m_TagString: Untagged
@@ -10530,3 +10592,16 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &7973513517394924220
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7973513517394924219}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 247927986215173489936d945e1f215d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prog: {fileID: 0}
