@@ -175,3 +175,4 @@ public class DialogueManager : MonoBehaviour
         dialogueOptionUI.SetActive(false);
     }
 }
+ 
