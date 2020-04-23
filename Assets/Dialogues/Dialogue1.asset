@@ -41,8 +41,8 @@ MonoBehaviour:
     url: https://raw.githubusercontent.com/bwarrend/HCC/master/Assets/Changeable%20Text/LoginD/third.txt
   - name: Acai Bowl Buddy
     portrait: {fileID: 21300000, guid: ab93ddeab0338574e9ebd951e99254d5, type: 3}
-    myText: But with this, there also many people who use the Internet for their own
-      personal gain.
+    myText: However, there also many people who use the Internet for their own personal
+      gain.
     url: https://raw.githubusercontent.com/bwarrend/HCC/master/Assets/Changeable%20Text/LoginD/third.txt
   - name: Acai Bowl Buddy
     portrait: {fileID: 21300000, guid: ab93ddeab0338574e9ebd951e99254d5, type: 3}
@@ -55,8 +55,8 @@ MonoBehaviour:
     url: https://raw.githubusercontent.com/bwarrend/HCC/master/Assets/Changeable%20Text/LoginD/third.txt
   - name: Acai Bowl Buddy
     portrait: {fileID: 21300000, guid: f9024205c31b7d9429fae40c4c09d193, type: 3}
-    myText: But thankfully, there are some solutions to take to make your time on
-      the Internet just a bit more safe.
+    myText: But thankfully, there are some solutions to make your time on the Internet
+      just a bit more safe.
     url: https://raw.githubusercontent.com/bwarrend/HCC/master/Assets/Changeable%20Text/LoginD/third.txt
   - name: Acai Bowl Buddy
     portrait: {fileID: 21300000, guid: 901bf0f8686e36448b65a67a047de5f4, type: 3}
@@ -69,8 +69,8 @@ MonoBehaviour:
     url: https://raw.githubusercontent.com/bwarrend/HCC/master/Assets/Changeable%20Text/LoginD/third.txt
   - name: Acai Bowl Buddy
     portrait: {fileID: 21300000, guid: ab93ddeab0338574e9ebd951e99254d5, type: 3}
-    myText: Combining longer passwords with a mix of lowercase-and uppercase characters
-      results in a more secure password fo' sho.
+    myText: Combining longer passwords with a mix of lowercase and uppercase characters
+      result in a more secure password, fo' sho.
     url: https://raw.githubusercontent.com/bwarrend/HCC/master/Assets/Changeable%20Text/LoginD/third.txt
   - name: Acai Bowl Buddy
     portrait: {fileID: 21300000, guid: ab93ddeab0338574e9ebd951e99254d5, type: 3}

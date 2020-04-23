@@ -20,7 +20,7 @@ MonoBehaviour:
     url: https://raw.githubusercontent.com/bwarrend/HCC/master/Assets/Changeable%20Text/LoginD/first.txt
   - name: Acai Bowl Hacker
     portrait: {fileID: 21300000, guid: 5bba768bc9a392f49991f9ebaadba477, type: 3}
-    myText: In addition to this, special characters such as an explamation mark (!)
+    myText: In addition to this, special characters such as an exclamation mark (!)
       make passwords even stronger.
     url: https://raw.githubusercontent.com/bwarrend/HCC/master/Assets/Changeable%20Text/LoginD/first.txt
   questionText: Which has the strongest password option?
